@@ -8,6 +8,7 @@ import Checkout from "../PagesJSX/Checkout/Checkout";
 import Novidades from "../PagesJSX/Novidades/Novidades";
 import Busca from "../PagesJSX/Busca/Busca";
 import Login from "../PagesJSX/Login/Login";
+import Duvidas from "../PagesJSX/DuvidasESac/Duvidas";
 
 const RouterPages = () => {
   return (
@@ -20,6 +21,7 @@ const RouterPages = () => {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/novidades" element={<Novidades />} />
         <Route path="/busca" element={<Busca />} />
+        <Route path="/duvidas" element={<Duvidas />} />
       </Routes>
     </Router>
   );

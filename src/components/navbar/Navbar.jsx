@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
@@ -14,13 +15,13 @@ const Navbar = () => {
         </li>
 
         <li className="navbar item">
-          <a className="logo" href="#">
+          <Link to={"/"}>
             <img
               src="https://media.discordapp.net/attachments/998358787507376228/998359187627200522/kingsman.png?width=400&height=400"
               alt=""
             />
             <p className="navbar-text"></p>
-          </a>
+          </Link>
         </li>
 
         <li className="navbar item">
