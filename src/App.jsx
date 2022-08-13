@@ -1,16 +1,10 @@
 import React from "react";
 
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/navbar/Navbar";
+import RouterPages from "./components/Routes/routes";
 
 import "./App.css";
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Footer />
-    </div>
-  );
+  return <RouterPages />;
 }
 export default App;
