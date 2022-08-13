@@ -1,123 +1,124 @@
+@import url("../reset/reset.css");
 * {
-    font-family: "Ibarra Real Nova", serif;
-  }
-@media (max-width: 900px) {
-    .rodape {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      background-color: #dcdfe5;
-      color: #002855;
-      width: 100%;
-    }
-    h3 {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    p {
-      font-size: 2vh;
-      font-weight: bold;
-    }
-    .copyright {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2vh;
-      font-weight: bold;
-    }
-    .copyright svg {
-      margin-right: 5px;
-    }
-    .git-logo {
-      margin: auto;
-    }
-    .git-logo svg {
-      font-size: 5vh;
-      margin-top: 1vh;
-      color: #002855;
-    }
-    .desenvolvedores {
-      display: grid;
-      justify-items: center;
-      font-size: 2vh;
-      padding-top: 1vh;
-      padding-bottom: 1vh;
-      line-height: normal;
-    }
-    .logo-rodape {
-      height: 32px;
-      width: auto;
-      margin-top: 1.5vh;
-      margin: auto;
-    }
+  font-family: "Ibarra Real Nova", serif;
 }
-  
+@media (max-width: 900px) {
+  .rodape {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdfe5;
+    color: #002855;
+    width: 100%;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p {
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  .copyright svg {
+    margin-right: 5px;
+  }
+  .git-logo {
+    margin: auto;
+  }
+  .git-logo svg {
+    font-size: 5vh;
+    margin-top: 1vh;
+    color: #002855;
+  }
+  .desenvolvedores {
+    display: grid;
+    justify-items: center;
+    font-size: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    line-height: normal;
+  }
+  .logo-rodape {
+    height: 32px;
+    width: auto;
+    margin-top: 1.5vh;
+    margin: auto;
+  }
+}
+
 @media (min-width: 900px) {
-    .rodape {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
-      background-color: #dcdfe5;
-      color: #002855;
-      width: 100%;
-      padding-top: 1vh;
-    }
-  
-    h3 {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    p {
-      font-size: 2vh;
-      font-weight: bold;
-    }
-    .copyright {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      text-align: flex-end;
-      font-size: 2vh;
-      font-weight: bold;
-      margin-bottom: 1.5vh;
-      order: 1;
-    }
-    .copyright svg {
-      font-size: 2vh;
-      margin-left: 1.5vh;
-      margin-right: 1vh;
-    }
-    .copyright p {
-      margin: 0;
-    }
-    .git-logo {
-      order: 3;
-    }
-    a .git-logo {
-      text-decoration: none;
-      color: #002855;
-    }
-    .git-logo svg {
-      font-size: 4.5vh;
-      margin-bottom: 1.5vh;
-      margin-right: 1.5vh;
-      color: #002855;
-    }
-    .desenvolvedores {
-      display: grid;
-      justify-items: center;
-      font-size: 2vh;
-      padding-top: 1vh;
-      padding-bottom: 1vh;
-      line-height: normal;
-      margin: auto;
-      order: 2;
-    }
-    .logo-rodape {
-      height: 40px;
-      width: auto;
-      margin-top: 1.5vh;
-      padding-bottom: 1vh;
-      margin: auto;
-    }
+  .rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #dcdfe5;
+    color: #002855;
+    width: 100%;
+    padding-top: 1vh;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p {
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+    font-size: 2vh;
+    font-weight: bold;
+    margin-bottom: 1.5vh;
+    order: 1;
+  }
+  .copyright svg {
+    font-size: 2vh;
+    margin-left: 1.5vh;
+    margin-right: 1vh;
+  }
+  .copyright p {
+    margin: 0;
+  }
+  .git-logo {
+    order: 3;
+  }
+  a .git-logo {
+    text-decoration: none;
+    color: #002855;
+  }
+  .git-logo svg {
+    font-size: 4.5vh;
+    margin-bottom: 1.5vh;
+    margin-right: 1.5vh;
+    color: #002855;
+  }
+  .desenvolvedores {
+    display: grid;
+    justify-items: center;
+    font-size: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    line-height: normal;
+    margin: auto;
+    order: 2;
+  }
+  .logo-rodape {
+    height: 40px;
+    width: auto;
+    margin-top: 1.5vh;
+    padding-bottom: 1vh;
+    margin: auto;
+  }
 }
