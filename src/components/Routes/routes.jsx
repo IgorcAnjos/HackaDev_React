@@ -9,10 +9,12 @@ import Novidades from "../PagesJSX/Novidades/Novidades";
 import Busca from "../PagesJSX/Busca/Busca";
 import Login from "../PagesJSX/Login/Login";
 import Duvidas from "../PagesJSX/DuvidasESac/Duvidas";
-import { produtos as ListaDeProdutos } from "../../ArrayBancoDeDados/ArrayBancoDeDados";
-
+const getProdutos = require("../../ArrayBancoDeDados/ArrayBancoDeDados");
 const RouterPages = () => {
+  const ListaDeProdutos = getProdutos();
+  console.log(ListaDeProdutos);
   const [listaCarrinho, setListaCarrinho] = useState("");
+
   return (
     <Router>
       <Routes>
