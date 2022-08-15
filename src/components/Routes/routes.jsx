@@ -9,7 +9,9 @@ import Novidades from "../PagesJSX/Novidades/Novidades";
 import Busca from "../PagesJSX/Busca/Busca";
 import Login from "../PagesJSX/Login/Login";
 import Duvidas from "../PagesJSX/DuvidasESac/Duvidas";
+
 const getProdutos = require("../../ArrayBancoDeDados/ArrayBancoDeDados");
+
 const RouterPages = () => {
   const ListaDeProdutos = getProdutos();
   console.log(ListaDeProdutos);
@@ -18,7 +20,7 @@ const RouterPages = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home ListaDeProdutos={ListaDeProdutos}/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/produto" element={<Produto />} />

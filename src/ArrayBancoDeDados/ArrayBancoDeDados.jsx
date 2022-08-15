@@ -55,7 +55,7 @@ const produtos = [
     quantidade_p: 5,
     quantidade_m: 5,
     quantidade_g: 5,
-    desconto: 8,
+    desconto: 10,
   },
   {
     id: 4,

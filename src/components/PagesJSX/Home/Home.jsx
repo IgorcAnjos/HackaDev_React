@@ -1,14 +1,17 @@
 import React from "react";
+
 import Banner from "../../Banner/Banner";
-
+import Catalogo from "../../Catalogo/Catalogo";
 import Footer from "../../Footer/Footer";
-import Navbar from "../../navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 
-const Home = () => {
+import './Home.css'
+const Home = ({ListaDeProdutos}) => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <Banner />
+      <Catalogo ListaDeProdutos={ListaDeProdutos}/>
       <Footer />
     </div>
   );

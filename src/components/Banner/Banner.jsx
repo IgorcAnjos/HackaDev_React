@@ -6,7 +6,7 @@ import foto3 from './foto3.jpeg'
 
 const Banner = () => {
     return (
-        <section className="carrousel">
+      <section className="carrousel">
         <div className="imagens-carrousel">
           <img
             className="itens-carrousel"

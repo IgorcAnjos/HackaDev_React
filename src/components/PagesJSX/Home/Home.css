@@ -1,0 +1,17 @@
+
+@media (max-width: 900px) {
+    .container {
+      background: #fafafa;
+      overflow-y: scroll;
+      height: 92vh;
+      color: #161616;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+      background: #fafafa;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+}
