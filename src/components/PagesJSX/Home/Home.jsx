@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../../Banner/Banner";
 
+import Banner from "../../Banner/Banner";
 import Footer from "../../Footer/Footer";
-import Navbar from "../../navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 
 const Home = () => {
   return (
