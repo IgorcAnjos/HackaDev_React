@@ -176,4 +176,7 @@ const produtos = [
   },
 ];
 
-export default produtos;
+function getProdutos() {
+  return produtos;
+}
+module.exports = getProdutos;
