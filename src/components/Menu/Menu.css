@@ -8,7 +8,7 @@
 @media (max-width: 500px) {
   /* Sombra Navbar secundaria */
   .sombra {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     transition: 0.8s ease-in-out /*cubic-bezier(0.075, 0.82, 0.165, 1)*/;
-    opacity: 0;
+    opacity: 1;
   }
 
   #fundo-sair-menu {
@@ -160,7 +160,7 @@
 @media (min-width: 500px) and (max-width: 900px) {
   /* Sombra Navbar secundaria */
   .sombra {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,7 +168,7 @@
     width: 100%;
     height: 100vh;
     transition: 0.8s ease-in-out /*cubic-bezier(0.075, 0.82, 0.165, 1)*/;
-    opacity: 0;
+    opacity: 1;
   }
 
   #fundo-sair-menu {
@@ -204,6 +204,8 @@
     margin: auto;
     padding-top: 1vh;
     padding-bottom: 1vh;
+
+    font-size: 4.5vh;
   }
   .navbar-secundaria #opcoes img {
     height: 5vh;
