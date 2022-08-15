@@ -14,7 +14,7 @@ function ProdutoCArrinho() {
         <p className="texto-remover">Remover item</p>
       </div>
       <div className="nome-tamanho-preco-quantidade">
-        <p className="nome-produto">Terno bonitão</p>
+        <p className="nome-produto">Terno Slim fit oliva de pedreiro</p>
         <div className="tamanho-preco">
           <p className="tamanho">Tam: M</p>
           <p className="preco">R$199,99</p>
