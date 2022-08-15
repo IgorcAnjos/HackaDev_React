@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "../PagesJSX/Home/Home";
@@ -9,8 +9,10 @@ import Novidades from "../PagesJSX/Novidades/Novidades";
 import Busca from "../PagesJSX/Busca/Busca";
 import Login from "../PagesJSX/Login/Login";
 import Duvidas from "../PagesJSX/DuvidasESac/Duvidas";
+import { produtos as ListaDeProdutos } from "../../ArrayBancoDeDados/ArrayBancoDeDados";
 
 const RouterPages = () => {
+  const [listaCarrinho, setListaCarrinho] = useState("");
   return (
     <Router>
       <Routes>
