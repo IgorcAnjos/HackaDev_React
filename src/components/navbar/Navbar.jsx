@@ -9,7 +9,12 @@ import "./Navbar.css";
 import Menu from "../Menu/Menu";
 import Carrinho from "../Carrinho/Carrinho";
 
-const Navbar = ({ listaCarrinho, handleAdicaoListaCarrinnho }) => {
+const Navbar = ({
+  listaCarrinho,
+  handleAdicaoListaCarrinnho,
+  handleSubtracaoListaCarrinnho,
+  handleExcluirListaCarrinnho,
+}) => {
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
   return (
@@ -53,6 +58,8 @@ const Navbar = ({ listaCarrinho, handleAdicaoListaCarrinnho }) => {
         setAbrirCarrinho={setAbrirCarrinho}
         listaCarrinho={listaCarrinho}
         handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+        handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
+        handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
       />
     </>
   );

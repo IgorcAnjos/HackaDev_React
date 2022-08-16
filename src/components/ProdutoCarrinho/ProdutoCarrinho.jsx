@@ -2,12 +2,24 @@ import React from "react";
 
 import "./ProdutoCarrinho.css";
 
-function ProdutoCarrinho({ produto, handleAdicaoListaCarrinnho }) {
+function ProdutoCarrinho({
+  produto,
+  handleAdicaoListaCarrinnho,
+  handleSubtracaoListaCarrinnho,
+  handleExcluirListaCarrinnho,
+}) {
   return (
     <section className="produto">
       <div className="foto-exclusao">
         <img className="foto-produto" src={produto.imagem} alt="" />
-        <p className="texto-remover">Remover item</p>
+        <p
+          className="texto-remover"
+          onClick={() => {
+            handleExcluirListaCarrinnho(produto.id);
+          }}
+        >
+          Remover item
+        </p>
       </div>
       <div className="nome-tamanho-preco-quantidade">
         <p className="nome-produto">{produto.nome}</p>
@@ -16,7 +28,19 @@ function ProdutoCarrinho({ produto, handleAdicaoListaCarrinnho }) {
           <p className="preco">R$ {produto.preco}</p>
         </div>
         <div className="quantidade">
-          <button className="menos-mais">-</button>
+          <button
+            className="menos-mais"
+            onClick={() => {
+              handleSubtracaoListaCarrinnho(produto.id);
+            }}
+            style={
+              produto.quantidade === 1
+                ? { border: "1px solid rgb(119, 133, 180)" }
+                : {}
+            }
+          >
+            -
+          </button>
           <p className="numero-quantidade">{produto.quantidade}</p>
           <button
             className="menos-mais"

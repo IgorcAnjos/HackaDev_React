@@ -68,6 +68,28 @@ const RouterPages = () => {
     }
   };
 
+  const handleSubtracaoListaCarrinnho = (idClick) => {
+    const findProduto = listaCarrinho.filter(
+      (produto) => produto.id === idClick
+    );
+
+    if (findProduto[0].quantidade !== 1) {
+      const indexProduto = listaCarrinho.indexOf(findProduto[0]);
+
+      listaCarrinho[indexProduto].quantidade = findProduto[0].quantidade - 1;
+      const novaListaCarrinho = [...listaCarrinho];
+
+      setListaCarrinho(novaListaCarrinho);
+    }
+  };
+
+  const handleExcluirListaCarrinnho = (idClick) => {
+    const novaListaCarrinho = listaCarrinho.filter(
+      (produto) => produto.id !== idClick
+    );
+
+    setListaCarrinho(novaListaCarrinho);
+  };
   return (
     <Router>
       <Routes>
@@ -78,6 +100,8 @@ const RouterPages = () => {
               ListaDeProdutos={ListaDeProdutos}
               listaCarrinho={listaCarrinho}
               handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+              handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
+              handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
             />
           }
         />
