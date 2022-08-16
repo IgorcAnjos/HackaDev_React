@@ -8,12 +8,14 @@ const Catalogo = ({ ListaDeProdutos }) => {
     <section className="catalogo">
       <h1 className="titulo-catalogo">Catálogo</h1>
       {ListaDeProdutos.map((item) => (
+        <div key={item.id}>
         <ProdutoCatalogo
-          key={item.id}
+          id={item.id}
           imagem={item.imagem}
           nome={item.nome}
           preco={item.preco}
         />
+        </div>
       ))}
     </section>
   );

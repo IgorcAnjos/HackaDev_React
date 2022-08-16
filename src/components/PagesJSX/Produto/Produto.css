@@ -1,0 +1,141 @@
+@import url("../../reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+  }
+  .button {
+    background: black;
+    color: white;
+    padding: 10px 100px;
+    margin: 2vh;
+    margin-top: 3vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .botao button {
+    /* margin-left: 2%; */
+    margin-right: 10px;
+    height: 45px;
+    width: 40px;
+    font-size: 13px;
+    text-align: center;
+  }
+  /*   .botao :last-child{
+    text-align: start;
+  } */
+  .botao {
+    display: flex;
+    border: none;
+    margin: 0 auto;
+    margin-left: 30px;
+    width: 92vw;
+    /* justify-content: left;
+    letter-spacing: 10px; */
+  }
+  .photo1 {
+    width: 65%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0px 60px;
+  }
+  .text {
+    /* height: calc(100vh - 45vh); */
+    flex: auto;
+    font-weight: 500;
+    align-items: center;
+    margin: 20px;
+  }
+  .text h1 {
+    font-size: 30px;
+    margin: 0px 10px;
+    font-weight: 600;
+  }
+  .text h2 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-weight: 550;
+  }
+  .text .a {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 5px;
+    font-weight: 600;
+    color: #9a9a9a;
+  }
+  .text .b {
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    margin: 2rem;
+    margin-top: 5rem;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .foto-section {
+    margin-left: 20vh;
+  }
+  .photo1 {
+    width: 30vw;
+    height: 70vh;
+  }
+
+  .informacoes {
+    margin-right: 30vh;
+  }
+  .button {
+    background: black;
+    color: white;
+    padding: 10px 100px;
+    /* margin: 4vh; */
+    margin-top: 5vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .botao button {
+    margin-left: 10px;
+    height: 5vh;
+    width: 4vh;
+    font-size: 13px;
+    text-align: center;
+  }
+  .text h1 {
+    font-size: 30px;
+    margin: 0px 10px 5px;
+    font-weight: 600;
+  }
+  .text h2 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 10px;
+    font-weight: 550;
+  }
+  .text .a {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 5px;
+    font-weight: 600;
+    color: #9a9a9a;
+  }
+  .text .b {
+    font-size: 20px;
+    margin: 25px 10px 5px;
+    font-weight: 600;
+  }
+}

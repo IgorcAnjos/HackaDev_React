@@ -125,11 +125,19 @@ const RouterPages = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/produto" element={<Produto />} />
+        {/* <Route path="/produto" element={<Produto />} /> */}
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/novidades" element={<Novidades />} />
         <Route path="/busca" element={<Busca />} />
         <Route path="/duvidas" element={<Duvidas />} />
+        <Route path="/produto/:id" element={<Produto 
+              ListaDeProdutos={ListaDeProdutos}
+              listaCarrinho={listaCarrinho}
+              handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+              handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
+              handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
+              subTotal={subTotal}
+              handleSubTotal={handleSubTotal}/>} />
       </Routes>
     </Router>
   );
