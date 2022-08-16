@@ -11,6 +11,8 @@ const Carrinho = ({
   setAbrirCarrinho,
   listaCarrinho,
   handleAdicaoListaCarrinnho,
+  handleSubtracaoListaCarrinnho,
+  handleExcluirListaCarrinnho,
 }) => {
   return abrirCarrinho ? (
     <div className="sombra-carrinho">
@@ -39,6 +41,8 @@ const Carrinho = ({
                 <ProdutoCarrinho
                   produto={produto}
                   handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+                  handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
+                  handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
                 />
               </li>
             ))}

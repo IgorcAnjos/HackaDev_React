@@ -155,7 +155,7 @@ const produtos = [
     nome: "Blazer Slim Fit Preto Cetim",
     descricao: "produto 11",
     id_categoria: categoria[3].id,
-    preco: 200.0,
+    preco: 2000.0,
     quantidade_p: 5,
     quantidade_m: 5,
     quantidade_g: 5,

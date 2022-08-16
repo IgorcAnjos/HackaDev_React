@@ -11,12 +11,16 @@ const Home = ({
   ListaDeProdutos,
   listaCarrinho,
   handleAdicaoListaCarrinnho,
+  handleSubtracaoListaCarrinnho,
+  handleExcluirListaCarrinnho,
 }) => {
   return (
     <div className="container">
       <Navbar
         listaCarrinho={listaCarrinho}
         handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+        handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
+        handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
       />
       <Banner />
       <Catalogo ListaDeProdutos={ListaDeProdutos} />
