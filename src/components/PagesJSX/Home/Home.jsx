@@ -5,13 +5,21 @@ import Catalogo from "../../Catalogo/Catalogo";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
-import './Home.css'
-const Home = ({ListaDeProdutos}) => {
+import "./Home.css";
+
+const Home = ({
+  ListaDeProdutos,
+  listaCarrinho,
+  handleAdicaoListaCarrinnho,
+}) => {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar
+        listaCarrinho={listaCarrinho}
+        handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
+      />
       <Banner />
-      <Catalogo ListaDeProdutos={ListaDeProdutos}/>
+      <Catalogo ListaDeProdutos={ListaDeProdutos} />
       <Footer />
     </div>
   );

@@ -5,10 +5,11 @@ import { FaBars } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 
 import "./Navbar.css";
+
 import Menu from "../Menu/Menu";
 import Carrinho from "../Carrinho/Carrinho";
 
-const Navbar = () => {
+const Navbar = ({ listaCarrinho, handleAdicaoListaCarrinnho }) => {
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
   return (
@@ -50,6 +51,8 @@ const Navbar = () => {
       <Carrinho
         abrirCarrinho={abrirCarrinho}
         setAbrirCarrinho={setAbrirCarrinho}
+        listaCarrinho={listaCarrinho}
+        handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
       />
     </>
   );
