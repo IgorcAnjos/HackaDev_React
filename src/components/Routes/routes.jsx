@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "../PagesJSX/Home/Home";
@@ -30,7 +30,7 @@ const RouterPages = () => {
         "https://media.discordapp.net/attachments/1008727983223230494/1008735052999430174/unknown.png?width=362&height=634",
       nome: "Roupinha anil",
       tamanho: "G",
-      preco: 80000.589,
+      preco: 800.589,
       quantidade: 1,
     },
   ]);
@@ -90,6 +90,22 @@ const RouterPages = () => {
 
     setListaCarrinho(novaListaCarrinho);
   };
+
+  const [subTotal, setSubTotal] = useState(0);
+
+  const handleSubTotal = () => {
+    let soma = 0;
+
+    listaCarrinho.map(
+      (produto) => (soma += produto.preco * produto.quantidade)
+    );
+    setSubTotal(soma.toFixed(2));
+  };
+
+  useEffect(() => {
+    handleSubTotal();
+  }, [listaCarrinho]);
+
   return (
     <Router>
       <Routes>
@@ -102,6 +118,8 @@ const RouterPages = () => {
               handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
               handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
               handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
+              subTotal={subTotal}
+              handleSubTotal={handleSubTotal}
             />
           }
         />

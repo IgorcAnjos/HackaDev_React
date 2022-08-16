@@ -14,6 +14,8 @@ const Navbar = ({
   handleAdicaoListaCarrinnho,
   handleSubtracaoListaCarrinnho,
   handleExcluirListaCarrinnho,
+  subTotal,
+  handleSubTotal,
 }) => {
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
@@ -60,6 +62,8 @@ const Navbar = ({
         handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
         handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
         handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
+        subTotal={subTotal}
+        handleSubTotal={handleSubTotal}
       />
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
@@ -13,6 +13,8 @@ const Carrinho = ({
   handleAdicaoListaCarrinnho,
   handleSubtracaoListaCarrinnho,
   handleExcluirListaCarrinnho,
+  subTotal,
+  handleSubTotal,
 }) => {
   return abrirCarrinho ? (
     <div className="sombra-carrinho">
@@ -43,13 +45,14 @@ const Carrinho = ({
                   handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
                   handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
                   handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
+                  handleSubTotal={handleSubTotal}
                 />
               </li>
             ))}
           </ul>
         </section>
         <section className="subtotal-finalizar">
-          <p id="subtotal">Subtotal - R$ 10.450.00</p>
+          <p id="subtotal">Subtotal - R$ {subTotal}</p>
           <button id="finalizar">Finalizar</button>
         </section>
       </nav>

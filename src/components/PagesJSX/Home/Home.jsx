@@ -13,6 +13,8 @@ const Home = ({
   handleAdicaoListaCarrinnho,
   handleSubtracaoListaCarrinnho,
   handleExcluirListaCarrinnho,
+  subTotal,
+  handleSubTotal,
 }) => {
   return (
     <div className="container">
@@ -21,6 +23,8 @@ const Home = ({
         handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
         handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
         handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
+        subTotal={subTotal}
+        handleSubTotal={handleSubTotal}
       />
       <Banner />
       <Catalogo ListaDeProdutos={ListaDeProdutos} />
