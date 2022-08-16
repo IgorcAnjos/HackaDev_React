@@ -7,6 +7,7 @@ function ProdutoCarrinho({
   handleAdicaoListaCarrinnho,
   handleSubtracaoListaCarrinnho,
   handleExcluirListaCarrinnho,
+  handleSubTotal,
 }) {
   return (
     <section className="produto">
