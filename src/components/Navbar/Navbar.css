@@ -3,6 +3,8 @@
 @media (max-width: 900px) {
   /* Navbar principal */
   .navbar-principal {
+    position: absolute;
+    width: 100vw;
     height: 7vh;
     display: flex;
     justify-content: center;

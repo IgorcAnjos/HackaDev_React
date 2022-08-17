@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Carrinho from "../../Carrinho/Carrinho";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 
@@ -37,7 +36,7 @@ const Produto = ({
       />
       <div className="container-produto">
         <div className="foto-section">
-          <img className="foto-produto" src={produto.imagem} />
+          <img className="foto-produto" src={produto.imagem} alt="" />
         </div>
 
         <div className="informacoes">
