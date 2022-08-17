@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 900px) {
-  .container {
+  .container-produto {
     display: grid;
   }
   .button {
@@ -79,7 +79,7 @@
   }
 }
 @media (min-width: 900px) {
-  .container {
+  .container-produto {
     display: flex;
     margin: 2rem;
     margin-top: 5rem;

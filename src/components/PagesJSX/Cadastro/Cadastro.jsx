@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 
 const Cadastro = () => {
+<<<<<<< HEAD
   const [valoresCadastro, setValoresCadastro] = useState({
     usuarioNome: "",
     usuarioEmail: "",
@@ -147,6 +148,9 @@ const Cadastro = () => {
       </section>
     </main>
   );
+=======
+  return <h1>página de CADASTRO</h1>;
+>>>>>>> be38944546106c6a94211ec927acf3ff68988aa0
 };
 
 export default Cadastro;

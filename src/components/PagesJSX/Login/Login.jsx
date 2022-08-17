@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import InputLoginCadastro from "../../InputLoginCadastro/InputLoginCadastro";
+import React from "react";
 
 const Login = () => {
+<<<<<<< HEAD
   //hook para manipulação do formulário, um valor para cada input
   const [valoresLogin, setValoresLogin] = useState({
     usuarioEmail: "",
@@ -70,6 +70,9 @@ const Login = () => {
       </section>
     </main>
   );
+=======
+  return <h1>Página de LOGIN</h1>;
+>>>>>>> be38944546106c6a94211ec927acf3ff68988aa0
 };
 
 export default Login;

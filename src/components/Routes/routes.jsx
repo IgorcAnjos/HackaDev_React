@@ -14,26 +14,7 @@ const getProdutos = require("../../ArrayBancoDeDados/ArrayBancoDeDados");
 
 const RouterPages = () => {
   const ListaDeProdutos = getProdutos();
-  const [listaCarrinho, setListaCarrinho] = useState([
-    {
-      id: "5M",
-      imagem:
-        "https://media.discordapp.net/attachments/1008727983223230494/1008735052999430174/unknown.png?width=362&height=634",
-      nome: "Jurubeba azul ",
-      tamanho: "M",
-      preco: 588.99,
-      quantidade: 3,
-    },
-    {
-      id: "7G",
-      imagem:
-        "https://media.discordapp.net/attachments/1008727983223230494/1008735052999430174/unknown.png?width=362&height=634",
-      nome: "Roupinha anil",
-      tamanho: "G",
-      preco: 800.589,
-      quantidade: 1,
-    },
-  ]);
+  const [listaCarrinho, setListaCarrinho] = useState([]);
 
   const handleAdicaoListaCarrinnho = (id, tamanho) => {
     const idClick = `${id}${tamanho}`;
@@ -130,14 +111,20 @@ const RouterPages = () => {
         <Route path="/novidades" element={<Novidades />} />
         <Route path="/busca" element={<Busca />} />
         <Route path="/duvidas" element={<Duvidas />} />
-        <Route path="/produto/:id" element={<Produto 
+        <Route
+          path="/produto/:id"
+          element={
+            <Produto
               ListaDeProdutos={ListaDeProdutos}
               listaCarrinho={listaCarrinho}
               handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
               handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
               handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
               subTotal={subTotal}
-              handleSubTotal={handleSubTotal}/>} />
+              handleSubTotal={handleSubTotal}
+            />
+          }
+        />
       </Routes>
     </Router>
   );

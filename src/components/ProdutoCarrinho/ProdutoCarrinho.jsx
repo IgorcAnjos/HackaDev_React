@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./ProdutoCarrinho.css";
 
@@ -9,10 +10,14 @@ function ProdutoCarrinho({
   handleExcluirListaCarrinnho,
   handleSubTotal,
 }) {
+  const novoid =
+    produto.id.length === 3 ? produto.id.substring(0, 2) : produto.id[0];
   return (
     <section className="produto">
       <div className="foto-exclusao">
-        <img className="foto-produto" src={produto.imagem} alt="" />
+        <Link to={`/produto/${novoid}/`}>
+          <img className="foto-produto" src={produto.imagem} alt="" />
+        </Link>
         <p
           className="texto-remover"
           onClick={() => {
@@ -35,9 +40,7 @@ function ProdutoCarrinho({
               handleSubtracaoListaCarrinnho(produto.id);
             }}
             style={
-              produto.quantidade === 1
-                ? { border: "1px solid rgb(119, 133, 180)" }
-                : {}
+              produto.quantidade === 1 ? { border: "1px solid crimson" } : {}
             }
           >
             -
@@ -46,7 +49,7 @@ function ProdutoCarrinho({
           <button
             className="menos-mais"
             onClick={() => {
-              handleAdicaoListaCarrinnho(produto.id[0], produto.tamanho);
+              handleAdicaoListaCarrinnho(novoid, produto.tamanho);
             }}
           >
             +
