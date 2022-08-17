@@ -27,6 +27,7 @@
   }
 
   .container-produto {
+    margin-top: 7vh;
     background: #fafafa;
     display: flex;
     flex-direction: column;
@@ -86,6 +87,7 @@
     width: 20vw;
     border-radius: 8px;
     font-size: 3vh;
+    font-weight: bolder;
     color: #161616;
     outline: 1px solid #161616;
     margin-top: 1vh;
@@ -111,17 +113,28 @@
     padding-right: 3vh;
     margin-top: 2vh;
     margin-bottom: 3vh;
-    height: 5vh;
+    height: 6vh;
   }
   .adicionar-sacola {
     height: 100%;
     width: 100%;
-    background: black;
-    color: white;
+    background: #dcdfe5;
+    outline: 0.2vw solid #161616;
+    color: #161616;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 3vh;
+    font-weight: bolder;
+    box-shadow: 1vw 1vw 0 0 #002855;
+    transition: 0.1s ease-in-out;
+  }
+
+  .adicionar-sacola:active {
+    background-color: #161616;
+    color: #fafafa;
+    outline: 0.2vw solid #fafafa;
+    box-shadow: 0 0 0 0 #002855;
+    transform: translate(1vw, 1vw);
   }
 }
 @media (min-width: 900px) {
@@ -207,6 +220,7 @@
     width: 10vw;
     border-radius: 8px;
     font-size: 3vh;
+    font-weight: bolder;
     color: #161616;
     outline: 1px solid #161616;
     margin-top: 2vh;
@@ -224,11 +238,22 @@
   .adicionar-sacola {
     height: 100%;
     width: 100%;
-    background: black;
-    color: white;
+    background: #dcdfe5;
+    color: #161616;
+    outline: 0.2vw solid #161616;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 3vh;
+    font-weight: bolder;
+    box-shadow: 0.5vw 0.5vw 0 0 #002855;
+    transition: 0.1s ease-in-out;
+  }
+
+  .adicionar-sacola:active {
+    background-color: #161616;
+    outline: 0.2vw solid #fafafa;
+    color: #fafafa;
+    box-shadow: 0 0 0 0 #002855;
+    transform: translate(0.5vw, 0.5vw);
   }
 }
