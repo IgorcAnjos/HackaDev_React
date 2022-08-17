@@ -48,8 +48,11 @@ const Navbar = ({
             }}
           >
             <FiShoppingBag />
-            <div className="item-na-sacola">
-              <p id="quantidade">8</p>
+            <div
+              className="item-na-sacola"
+              style={listaCarrinho.length === 0 ? { display: "none" } : {}}
+            >
+              <p id="quantidade">{listaCarrinho.length}</p>
             </div>
           </li>
         </ul>
