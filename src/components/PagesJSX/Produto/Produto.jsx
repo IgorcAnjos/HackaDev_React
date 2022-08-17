@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Carrinho from "../../Carrinho/Carrinho";
 import Navbar from "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
 import "./Produto.css";
 
@@ -25,7 +26,7 @@ const Produto = ({
   const produto = findProduto[0];
 
   return (
-    <>
+    <div className="cont">
       <Navbar
         listaCarrinho={listaCarrinho}
         handleAdicaoListaCarrinnho={handleAdicaoListaCarrinnho}
@@ -36,18 +37,22 @@ const Produto = ({
       />
       <div className="container-produto">
         <div className="foto-section">
-          <img className="photo1" src={produto.imagem} />
+          <img className="foto-produto" src={produto.imagem} />
         </div>
 
         <div className="informacoes">
-          <div className="text">
-            <h1>{produto.nome}</h1>
-            <h2>R$ {produto.preco}</h2>
-            <h4 className="a">em até 3x {(produto.preco / 3).toFixed(2)}</h4>
-            <h4 className="b">Escolha o tamanho</h4>
+          <div className="nome-preco-parcelas">
+            <h1 className="nome">{produto.nome}</h1>
+            <div className="preco-parcelas">
+              <p className="preco">R$ {produto.preco.toFixed(2)}</p>
+              <p className="parcelas">
+                em até 3x {(produto.preco / 3).toFixed(2)}
+              </p>
+            </div>
           </div>
-          <div className="select">
-            <select class="cadastro-input" name="paises" id="endereco-pais">
+          <div className="selecao-tamnho">
+            <h4 className="tamanho">Escolha o tamanho</h4>
+            <select class="tamanho-input" id="tamanho">
               <option value="P" selected="selected">
                 P
               </option>
@@ -56,11 +61,14 @@ const Produto = ({
             </select>
           </div>
 
-          <div className="action">
+          <div className="section-botao">
             <button
-              className="button"
+              className="adicionar-sacola"
               onClick={() => {
-                handleAdicaoListaCarrinnho(produto.id, "M");
+                const select = document.getElementById("tamanho");
+                const tamanho = select.value;
+                console.log(tamanho);
+                handleAdicaoListaCarrinnho(produto.id, tamanho);
               }}
             >
               Adicionar à Sacola
@@ -68,7 +76,8 @@ const Produto = ({
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

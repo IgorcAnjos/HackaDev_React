@@ -106,7 +106,6 @@ const RouterPages = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        {/* <Route path="/produto" element={<Produto />} /> */}
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/novidades" element={<Novidades />} />
         <Route path="/busca" element={<Busca />} />

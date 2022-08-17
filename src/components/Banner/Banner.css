@@ -57,9 +57,9 @@
     height: 60vh;
     overflow: hidden;
     margin: auto;
+    margin-top: 10vh;
     box-shadow: 10px 10px 10px 0 #4d82be;
     margin-bottom: 2vh;
-    padding-top: 5px;
     border-radius: 10px;
   }
 
@@ -70,7 +70,6 @@
     margin: 0;
     padding: 0;
     animation: animacao 15s infinite;
-    
   }
 
   .carrousel .imagens-carrousel .itens-carrousel {

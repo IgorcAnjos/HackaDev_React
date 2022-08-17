@@ -53,11 +53,10 @@
     font-size: 3vh;
   }
 
-  .nome-tamanho-preco-quantidade .tamanho-preco,
-  .nome-tamanho-preco-quantidade .quantidade {
+  .tamanho-preco,
+  .quantidade {
     margin-top: 2vh;
     padding-left: 2vw;
-    font-size: 2.5vh;
   }
 
   .nome-tamanho-preco-quantidade .tamanho-preco {
