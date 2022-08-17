@@ -1,18 +1,14 @@
 import React from "react";
 
-function InputLoginCadastro() {
+function InputLoginCadastro(props) {
+  //configurar os props para cada atributo do input, realizar destructring
+  const { label, errorMessage, onChange, id, ...inputProps } = props;
+
   return (
     <>
-      <label class="login-label" for="senha-usuario">
-        Senha
-      </label>
-      <input
-        class="login-input"
-        type="password"
-        size="25"
-        maxlength="25"
-        id="senha-usuario"
-      />
+      <label for={id}>{label}</label>
+      <input id={id} {...inputProps} />
+      <span>{errorMessage}</span>
     </>
   );
 }

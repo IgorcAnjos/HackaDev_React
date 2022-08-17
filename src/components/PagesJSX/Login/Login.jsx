@@ -3,7 +3,7 @@ import InputLoginCadastro from "../../InputLoginCadastro/InputLoginCadastro";
 
 const Login = () => {
   //hook para manipulação do formulário, um valor para cada input
-  const [loginValores, setLoginValores] = useState({
+  const [valoresLogin, setValoresLogin] = useState({
     usuarioEmail: "",
     usuarioSenha: "",
   });
@@ -16,8 +16,9 @@ const Login = () => {
       id: "email-usuario",
       label: "E-mail",
       type: "text",
-      size: 50,
-      maxlength: 50,
+      pattern: "",
+      required: true,
+      errorMessage: "",
     },
     {
       idNum: 2,
@@ -25,14 +26,19 @@ const Login = () => {
       id: "senha-usuario",
       label: "Senha",
       type: "password",
-      size: 25,
-      maxlength: 25,
+      pattern: "",
+      required: true,
+      errorMessage: "",
     },
   ];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
+
+  // const onChange = (e) => {
+  //   setValoresLogin({ ...valoresLogin, [e.target.name]: e.target.value });
+  // };
 
   return (
     <main class="login-main">
@@ -42,7 +48,7 @@ const Login = () => {
             <InputLoginCadastro
               key={input.idNum}
               {...input}
-              value={loginValores[input.name]}
+              value={valoresLogin[input.name]}
             />
           ))}
 

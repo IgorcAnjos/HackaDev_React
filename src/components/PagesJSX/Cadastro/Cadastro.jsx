@@ -1,7 +1,7 @@
-import React from "react";
+import { React, useState } from "react";
 
 const Cadastro = () => {
-  const [cadastroValores, setCadastroValores] = useState({
+  const [valoresCadastro, setValoresCadastro] = useState({
     usuarioNome: "",
     usuarioEmail: "",
     usuarioSenha: "",
@@ -11,7 +11,7 @@ const Cadastro = () => {
     usuarioCidade: "",
     usuarioBairro: "",
     usuarioEstado: "",
-    usuarioComplemento: ""
+    usuarioComplemento: "",
   });
 
   const inputs = [
@@ -21,44 +21,46 @@ const Cadastro = () => {
       id: "nome-usuario",
       label: "Nome completo",
       type: "text",
-      size: 50,
-      maxlength: 50,
+      placeholder: "Seu nome completo",
+      required: true,
+      errorMessage: "digite o seu nome",
     },
     {
       idNum: 2,
       name: "usuarioEmail",
       id: "email-usuario",
       label: "E-mail",
-      type: "password",
-      size: 25,
-      maxlength: 25,
+      type: "email",
+      placeholder: "Seu e-mail",
+      required: true,
+      errorMessage: "Por favor digite um email válido",
     },
     {
       idNum: 3,
       name: "usuarioSenha",
       id: "senha-usuario",
-      label: "E-mail",
+      label: "Senha",
       type: "password",
-      size: 25,
-      maxlength: 25,
+      placeholder: "",
+      pattern: ".{8, 20}",
+      required: true,
+      errorMessage: "Sua senha deve ter no mínimo 8 caracteres",
     },
     // {
     //   idNum: 4,
-    //   name: "usuarioEmail",
-    //   id: "email-usuario",
-    //   label: "E-mail",
-    //   type: "password",
-    //   size: 25,
-    //   maxlength: 25,
+    //   name: "usuarioPais",
+    //   id: "endereco-pais",
+    //   label: "País",
+    //   type: "select",
+    //   pattern:
     // },
-    {
+    // {
     //   idNum: 5,
-    //   name: "usuarioEndereco",
-    //   id: "email-usuario",
-    //   label: "E-mail",
-    //   type: "password",
-    //   size: 25,
-    //   maxlength: 25,
+    //   name: "usuarioCep",
+    //   id: "endereco-cep",
+    //   label: "CEP",
+    //   type: "tel",
+    //   pattern:
     // },
     {
       idNum: 6,
@@ -66,8 +68,10 @@ const Cadastro = () => {
       id: "endereco",
       label: "Endereço",
       type: "text",
-      size: 50,
-      maxlength: 50,
+      placeholder: "",
+      pattern: ".{, 50}",
+      required: true,
+      errorMessage: "",
     },
     {
       idNum: 7,
@@ -75,8 +79,10 @@ const Cadastro = () => {
       id: "endereco-cidade",
       label: "Cidade",
       type: "text",
-      size: 30,
-      maxlength: 30,
+      placeholder: "",
+      pattern: ".{, 30}",
+      required: true,
+      errorMessage: "",
     },
     {
       idNum: 8,
@@ -84,8 +90,10 @@ const Cadastro = () => {
       id: "endereco-bairro",
       label: "Bairro",
       type: "text",
-      size: 30,
-      maxlength: 30,
+      placeholder: "",
+      pattern: ".{, 30}",
+      required: true,
+      errorMessage: "",
     },
     {
       idNum: 9,
@@ -93,8 +101,10 @@ const Cadastro = () => {
       id: "endereco-estado",
       label: "Estado",
       type: "text",
-      size: 2,
-      maxlength: 2,
+      placeholder: "",
+      pattern: "^[A-Z]{2}",
+      required: true,
+      errorMessage: "",
     },
     {
       idNum: 9,
@@ -102,22 +112,31 @@ const Cadastro = () => {
       id: "endereco-complemento",
       label: "Complemento",
       type: "text",
-      size: 50,
-      maxlength: 50,
+      placeholder: "",
+      pattern: ".{, 50}",
+      required: true,
+      errorMessage: "",
     },
   ];
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
+
+  // const onChange = (e) => {
+  //   setValoresCadastro({ ...valoresCadastro, [e.target.name]: e.target.value });
+  // };
 
   return (
     <main class="cadastro-main">
       <section class="cadastro-section">
-
         <form action="" id="form-cadastro">
           {inputs.map((input) => (
             <InputLoginCadastro
               key={input.idNum}
               {...input}
-              value={cadastroValores[input.name]}
-            /> 
+              value={valoresCadastro[input.name]}
+            />
           ))}
           <div class="enviar-cadastro">
             <a href="../../home.html">
@@ -125,7 +144,6 @@ const Cadastro = () => {
             </a>
           </div>
         </form>
-
       </section>
     </main>
   );
