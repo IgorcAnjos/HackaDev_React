@@ -1,78 +1,48 @@
 import React from "react";
+import Header from "../../Header/Header";
+import InputCheckout from "../../InputCheckout/InputCheckout";
+import "./Login.css";
 
 const Login = () => {
-<<<<<<< HEAD
-  //hook para manipulação do formulário, um valor para cada input
-  const [valoresLogin, setValoresLogin] = useState({
-    usuarioEmail: "",
-    usuarioSenha: "",
-  });
-
-  //array passado como props para component inputLoginCadastro
-  const inputs = [
-    {
-      idNum: 1,
-      name: "usuarioEmail",
-      id: "email-usuario",
-      label: "E-mail",
-      type: "text",
-      pattern: "",
-      required: true,
-      errorMessage: "",
-    },
-    {
-      idNum: 2,
-      name: "usuarioSenha",
-      id: "senha-usuario",
-      label: "Senha",
-      type: "password",
-      pattern: "",
-      required: true,
-      errorMessage: "",
-    },
-  ];
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-
-  // const onChange = (e) => {
-  //   setValoresLogin({ ...valoresLogin, [e.target.name]: e.target.value });
-  // };
-
   return (
-    <main class="login-main">
-      <section class="login-section">
-        <form class="login-form" action="">
-          {inputs.map((input) => (
-            <InputLoginCadastro
-              key={input.idNum}
-              {...input}
-              value={valoresLogin[input.name]}
-            />
-          ))}
-
-          <a href="../../home.html" class="login-link">
+    <main className="login-main">
+      <Header texto="Login" />
+      <section className="login-section">
+        <form className="login-form" action="">
+          <InputCheckout
+            texto="E-mail"
+            type="email"
+            nome="email-usuario"
+            id="email-usuario"
+            size="50"
+            maxlength="50"
+          />
+          <InputCheckout
+            texto="Senha"
+            type="password"
+            nome="senha-usuario"
+            id="senha-usuario"
+            size="20"
+            maxLength="20"
+          />
+          <a href="../../home.html" className="login-link">
             Esqueceu sua senha?
           </a>
 
-          <a class="botao-entrar" href="../../home.html">
-            <button class="login-btn">Entrar</button>
+          <a className="botao-entrar" href="../../home.html">
+            <button className="login-btn">Entrar</button>
           </a>
         </form>
 
-        <div class="redirect-cadastro">
+        <div className="redirect-cadastro">
           <p id="ou">-ou-</p>
-          <a href="../pages/cadastro.html" class="login-link">
+          <a href="/cadastro" className="login-link">
             Ainda não é cadastrado?
           </a>
         </div>
       </section>
     </main>
   );
-=======
-  return <h1>Página de LOGIN</h1>;
->>>>>>> be38944546106c6a94211ec927acf3ff68988aa0
 };
 
 export default Login;

@@ -1,144 +1,94 @@
-import { React, useState } from "react";
+import React from "react";
+import "./Cadastro.css";
+import InputCheckout from "../../InputCheckout/InputCheckout";
+import Header from "../../Header/Header";
 
 const Cadastro = () => {
-<<<<<<< HEAD
-  const [valoresCadastro, setValoresCadastro] = useState({
-    usuarioNome: "",
-    usuarioEmail: "",
-    usuarioSenha: "",
-    usuarioPais: "",
-    usuarioCep: "",
-    usuarioEndereco: "",
-    usuarioCidade: "",
-    usuarioBairro: "",
-    usuarioEstado: "",
-    usuarioComplemento: "",
-  });
-
-  const inputs = [
-    {
-      idNum: 1,
-      name: "usuarioNome",
-      id: "nome-usuario",
-      label: "Nome completo",
-      type: "text",
-      placeholder: "Seu nome completo",
-      required: true,
-      errorMessage: "digite o seu nome",
-    },
-    {
-      idNum: 2,
-      name: "usuarioEmail",
-      id: "email-usuario",
-      label: "E-mail",
-      type: "email",
-      placeholder: "Seu e-mail",
-      required: true,
-      errorMessage: "Por favor digite um email válido",
-    },
-    {
-      idNum: 3,
-      name: "usuarioSenha",
-      id: "senha-usuario",
-      label: "Senha",
-      type: "password",
-      placeholder: "",
-      pattern: ".{8, 20}",
-      required: true,
-      errorMessage: "Sua senha deve ter no mínimo 8 caracteres",
-    },
-    // {
-    //   idNum: 4,
-    //   name: "usuarioPais",
-    //   id: "endereco-pais",
-    //   label: "País",
-    //   type: "select",
-    //   pattern:
-    // },
-    // {
-    //   idNum: 5,
-    //   name: "usuarioCep",
-    //   id: "endereco-cep",
-    //   label: "CEP",
-    //   type: "tel",
-    //   pattern:
-    // },
-    {
-      idNum: 6,
-      name: "usuarioEndereco",
-      id: "endereco",
-      label: "Endereço",
-      type: "text",
-      placeholder: "",
-      pattern: ".{, 50}",
-      required: true,
-      errorMessage: "",
-    },
-    {
-      idNum: 7,
-      name: "usuarioCidade",
-      id: "endereco-cidade",
-      label: "Cidade",
-      type: "text",
-      placeholder: "",
-      pattern: ".{, 30}",
-      required: true,
-      errorMessage: "",
-    },
-    {
-      idNum: 8,
-      name: "usuarioBairro",
-      id: "endereco-bairro",
-      label: "Bairro",
-      type: "text",
-      placeholder: "",
-      pattern: ".{, 30}",
-      required: true,
-      errorMessage: "",
-    },
-    {
-      idNum: 9,
-      name: "usuarioEstado",
-      id: "endereco-estado",
-      label: "Estado",
-      type: "text",
-      placeholder: "",
-      pattern: "^[A-Z]{2}",
-      required: true,
-      errorMessage: "",
-    },
-    {
-      idNum: 9,
-      name: "usuarioComplemento",
-      id: "endereco-complemento",
-      label: "Complemento",
-      type: "text",
-      placeholder: "",
-      pattern: ".{, 50}",
-      required: true,
-      errorMessage: "",
-    },
-  ];
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-
-  // const onChange = (e) => {
-  //   setValoresCadastro({ ...valoresCadastro, [e.target.name]: e.target.value });
-  // };
-
   return (
     <main class="cadastro-main">
+      <Header texto="Cadastro" />
       <section class="cadastro-section">
         <form action="" id="form-cadastro">
-          {inputs.map((input) => (
-            <InputLoginCadastro
-              key={input.idNum}
-              {...input}
-              value={valoresCadastro[input.name]}
-            />
-          ))}
+          <InputCheckout
+            texto="Nome completo"
+            type="text"
+            nome="nome-usuario"
+            id="nome-usuario"
+            size="50"
+            maxlength="50"
+          />
+          <InputCheckout
+            texto="E-mail"
+            type="email"
+            nome="email-usuario"
+            id="email-usuario"
+            size="40"
+            maxlength="40"
+          />
+          <InputCheckout
+            texto="Senha"
+            type="password"
+            nome="senha-usuario"
+            id="senha-usuario"
+            size="20"
+            maxlength="20"
+          />
+          <InputCheckout
+            texto="País"
+            type="text"
+            nome="endereco-pais"
+            id="endereco-pais"
+            size="30"
+            maxlength="30"
+          />
+          <InputCheckout
+            texto="CEP"
+            type="tel"
+            nome="endereco-cep"
+            id="endereco-cep"
+            pattern="[0-7]{8}"
+            maxlength="8"
+          />
+          <InputCheckout
+            texto="Endereço"
+            type="text"
+            nome="endereco"
+            id="endereco"
+            size="50"
+            maxlength="50"
+          />
+          <InputCheckout
+            texto="Cidade"
+            type="text"
+            nome="endereco-cidade"
+            id="endereco-cidade"
+            size="30"
+            maxlength="30"
+          />
+          <InputCheckout
+            texto="Bairro"
+            type="text"
+            nome="endereco-bairro"
+            id="endereco-bairro"
+            size="30"
+            maxlength="30"
+          />
+          <InputCheckout
+            texto="Estado"
+            type="text"
+            nome="endereco-estado"
+            id="endereco-estado"
+            size="2"
+            maxlength="2"
+          />
+          <InputCheckout
+            texto="Complemento"
+            type="text"
+            nome="endereco-complemento"
+            id="endereco-complemento"
+            size="50"
+            maxlength="50"
+          />
           <div class="enviar-cadastro">
             <a href="../../home.html">
               <button class="enviar-button">Enviar</button>
@@ -148,9 +98,6 @@ const Cadastro = () => {
       </section>
     </main>
   );
-=======
-  return <h1>página de CADASTRO</h1>;
->>>>>>> be38944546106c6a94211ec927acf3ff68988aa0
 };
 
 export default Cadastro;
