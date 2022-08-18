@@ -4,7 +4,10 @@ import InputCheckout from "../InputCheckout/InputCheckout";
 
 import "./PagamentoCartao.css";
 
-function PagamentoCartao() {
+function PagamentoCartao({ listaCarrinho }) {
+  let total = 0;
+  listaCarrinho.map((produto) => (total += produto.quantidade * produto.preco));
+
   return (
     <section className="pagamento" id="pagamento-cartao-credito">
       <fieldset className="formulario-pagamento">
@@ -87,11 +90,9 @@ function PagamentoCartao() {
           </label>
 
           <select className="parcelas-cartao" id="parcelas">
-            <option value="1" selected="selected">
-              1
-            </option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+            <option defaultValue="1">1x de R$ {total.toFixed(2)}</option>
+            <option value="2">2x de R$ {(total / 2).toFixed(2)}</option>
+            <option value="3">3x de {(total / 3).toFixed(2)}</option>
           </select>
         </div>
       </fieldset>
