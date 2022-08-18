@@ -51,7 +51,7 @@ const Produto = ({
           </div>
           <div className="selecao-tamnho">
             <h4 className="tamanho">Escolha o tamanho</h4>
-            <select class="tamanho-input" id="tamanho">
+            <select defaultValue={"p"} class="tamanho-input" id="tamanho">
               <option value="P" selected="selected">
                 P
               </option>
@@ -66,7 +66,6 @@ const Produto = ({
               onClick={() => {
                 const select = document.getElementById("tamanho");
                 const tamanho = select.value;
-                console.log(tamanho);
                 handleAdicaoListaCarrinnho(produto.id, tamanho);
               }}
             >

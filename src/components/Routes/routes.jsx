@@ -74,7 +74,7 @@ const RouterPages = () => {
 
   const [subTotal, setSubTotal] = useState(0);
 
-  const handleSubTotal = () => {
+  const handleSubTotal = (listaCarrinho) => {
     let soma = 0;
 
     listaCarrinho.map(
@@ -84,7 +84,7 @@ const RouterPages = () => {
   };
 
   useEffect(() => {
-    handleSubTotal();
+    handleSubTotal(listaCarrinho);
   }, [listaCarrinho]);
 
   return (
@@ -106,7 +106,10 @@ const RouterPages = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route
+          path="/checkout"
+          element={<Checkout listaCarrinho={listaCarrinho} />}
+        />
         <Route path="/novidades" element={<Novidades />} />
         <Route path="/busca" element={<Busca />} />
         <Route path="/duvidas" element={<Duvidas />} />
