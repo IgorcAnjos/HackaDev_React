@@ -53,7 +53,9 @@ const Carrinho = ({
         </section>
         <section className="subtotal-finalizar">
           <p id="subtotal">Subtotal - R$ {subTotal}</p>
-          <button id="finalizar">Finalizar</button>
+          <a href="/checkout">
+            <button id="finalizar">Finalizar</button>
+          </a>
         </section>
       </nav>
     </div>

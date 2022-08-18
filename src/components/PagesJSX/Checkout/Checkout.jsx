@@ -1,7 +1,40 @@
 import React from "react";
 
+import InputCheckout from "../../InputCheckout/InputCheckout";
+import Header from "../../Header/Header";
+
+import "./Checkout.css";
+
 const Checkout = () => {
-  return <h1>Página de CHECKOUT</h1>;
+  return (
+    <div className="checkout">
+      <Header texto="Seu Pedido" />
+      <InputCheckout
+        texto="Nome Completo"
+        type="text"
+        nome="nome-completo"
+        id="nome-completo"
+        size="50"
+        maxlength="50"
+      />
+      <InputCheckout
+        texto="E-mail"
+        type="E-mail"
+        nome="Email"
+        id="Email"
+        size="30"
+        maxlength="30"
+      />
+      <InputCheckout
+        texto="Confirme seu E-mail"
+        type="E-mail"
+        nome="Email"
+        id="confirma-Email"
+        size="30"
+        maxlength="30"
+      />
+    </div>
+  );
 };
 
 export default Checkout;
