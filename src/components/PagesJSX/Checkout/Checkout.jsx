@@ -11,7 +11,7 @@ import "./Checkout.css";
 
 const Checkout = ({ listaCarrinho }) => {
   return (
-    <div classNameName="checkout">
+    <div classNameName="checkout-container">
       <Header texto="Seu Pedido" />
       <InputCheckout
         texto="Nome Completo"

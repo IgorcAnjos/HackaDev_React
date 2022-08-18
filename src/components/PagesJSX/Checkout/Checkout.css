@@ -1,7 +1,7 @@
 @import url("../../reset/reset.css");
 
 @media (max-width: 500px) {
-  .checkout {
+  .checkout-container {
     top: 0;
     height: max-content;
     margin: auto;
@@ -11,15 +11,15 @@
     overflow-y: scroll;
   }
 
-  .checkout::-webkit-scrollbar {
+  .checkout-container::-webkit-scrollbar {
     width: 4px;
   }
 
-  .checkout::-webkit-scrollbar-track {
+  .checkout-container::-webkit-scrollbar-track {
     background: #002855;
   }
 
-  .checkout::-webkit-scrollbar-thumb {
+  .checkout-container::-webkit-scrollbar-thumb {
     background-color: #dcdfe5;
     width: 100%;
     /* border-radius: 100px; */
@@ -63,33 +63,24 @@
 
 /* Desktop */
 @media (min-width: 500px) {
-  .checkout {
-    top: 0;
-    width: 500px;
-    margin: 0 auto;
-    background: #fafafa;
-    padding: 5px;
-    height: 97vh;
-    overflow-y: scroll;
-    border-bottom: 1px solid #dcdfe5;
-    border-left: 1px solid #dcdfe5;
-    border-top: 1px solid #dcdfe5;
-    border-radius: 10px;
-    padding-bottom: 6vh;
+  .checkout-container {
+    width: 50vw;
+    overflow-y: hidden;
   }
+
   .texto-descricao {
     font-size: 28px;
   }
 
-  .checkout::-webkit-scrollbar {
+  .checkout-container::-webkit-scrollbar {
     width: 4px;
   }
 
-  .checkout::-webkit-scrollbar-track {
+  .checkout-container::-webkit-scrollbar-track {
     background: #002855;
   }
 
-  .checkout::-webkit-scrollbar-thumb {
+  .checkout-container::-webkit-scrollbar-thumb {
     background-color: #dcdfe5;
     width: 100%;
     /* border-radius: 100px; */
@@ -97,7 +88,7 @@
 
   /* Botão de finalizar o pagamento */
   .finalizar-compra {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     margin-left: 0;
     height: 6vh;

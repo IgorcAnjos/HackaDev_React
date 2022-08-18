@@ -17,6 +17,7 @@ const InputCheckout = ({
         {texto}
       </label>
       <input
+        className="input"
         type={type}
         name={nome}
         id={id}
