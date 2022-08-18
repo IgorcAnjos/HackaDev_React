@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
 import InputCheckout from "../../InputCheckout/InputCheckout";
 import "./Login.css";
@@ -36,9 +37,9 @@ const Login = () => {
 
         <div className="redirect-cadastro">
           <p id="ou">-ou-</p>
-          <a href="/cadastro" className="login-link">
+          <Link to="/cadastro" className="login-link">
             Ainda não é cadastrado?
-          </a>
+          </Link>
         </div>
       </section>
     </main>

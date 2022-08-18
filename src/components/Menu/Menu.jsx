@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { IoIosClose } from "react-icons/io";
 
@@ -38,9 +39,9 @@ const Menu = ({ abrirMenu, setAbrirMenu }) => {
             </section>
             <section id="login">
               <li className="navbar item">
-                <a href={"/login"}>
+                <Link to="/login">
                   <p className="navbar-text">ENTRAR</p>
-                </a>
+                </Link>
               </li>
             </section>
             {/* <!-- <div className="barra-separacao"></div> --> */}
