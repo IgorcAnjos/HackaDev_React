@@ -1,18 +1,15 @@
 @import url("../reset/reset.css");
 /* Navbar mobile media query 900px */
 @media (max-width: 900px) {
-  body {
-    background-color: #dcdfe5;
-    user-select: none;
-  }
-
   /* Navbar principal */
   .navbar-principal {
+    position: absolute;
+    width: 100vw;
     height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #dcdfe5;
   }
 
   /* Lista da navbar principal */
@@ -90,18 +87,15 @@
 
 @media (min-width: 900px) {
   /* navbar desktop */
-  body {
-    background-color: #dcdfe5;
-    user-select: none;
-  }
 
   /* Navbar principal */
   .navbar-principal {
+    position: absolute;
     width: 100vw;
     height: 7vh;
     display: flex;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #dcdfe5;
   }
 
   /* Lista da navbar principal */

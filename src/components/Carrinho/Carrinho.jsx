@@ -1,4 +1,5 @@
 import { React } from "react";
+import { Link } from "react-router-dom";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
@@ -53,7 +54,9 @@ const Carrinho = ({
         </section>
         <section className="subtotal-finalizar">
           <p id="subtotal">Subtotal - R$ {subTotal}</p>
-          <button id="finalizar">Finalizar</button>
+          <Link to={`/checkout`}>
+            <button id="finalizar">Finalizar</button>
+          </Link>
         </section>
       </nav>
     </div>

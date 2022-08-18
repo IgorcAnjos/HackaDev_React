@@ -6,11 +6,99 @@
 }
 
 @media (max-width: 900px) {
-  .container-produto {
-    display: grid;
+  .cont {
+    background: #fafafa;
+    overflow-y: scroll;
+    height: 100vh;
+    color: #161616;
   }
+
+  .cont::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .cont::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  .cont::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+  }
+
+  .container-produto {
+    margin-top: 7vh;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-section {
+    text-align: center;
+    padding: 3vh;
+    height: 60vh;
+  }
+
+  .foto-produto {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0.2vw 0.2vw 0 0 #161616;
+    object-fit: cover;
+  }
+
+  .informacoes {
+    padding-left: 3vh;
+    color: #161616;
+  }
+
+  .nome-preco-parcelas {
+    display: block;
+  }
+  .nome {
+    font-size: 4vh;
+  }
+  .preco-parcelas {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .preco {
+    font-size: 3vh;
+  }
+
+  .parcelas {
+    color: #888888;
+    margin-left: 7vw;
+  }
+
+  .tamanho {
+    font-size: 2.2vh;
+  }
+
+  .tamanho-input {
+    width: 90vw;
+    border: none;
+    background: #fafafa;
+    height: 4vh;
+    width: 20vw;
+    border-radius: 8px;
+    font-size: 3vh;
+    font-weight: bolder;
+    color: #161616;
+    outline: 1px solid #161616;
+    margin-top: 1vh;
+  }
+
+  .tamanho-input:focus {
+    outline: 1px solid #002855;
+  }
+
   .button {
-    background: black;
+    background: #161616;
     color: white;
     padding: 10px 100px;
     margin: 2vh;
@@ -20,122 +108,152 @@
     font-size: 14px;
     font-weight: 900;
   }
-  .botao button {
-    /* margin-left: 2%; */
-    margin-right: 10px;
-    height: 45px;
-    width: 40px;
-    font-size: 13px;
-    text-align: center;
+
+  .section-botao {
+    padding-right: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    height: 6vh;
   }
-  /*   .botao :last-child{
-    text-align: start;
-  } */
-  .botao {
-    display: flex;
-    border: none;
-    margin: 0 auto;
-    margin-left: 30px;
-    width: 92vw;
-    /* justify-content: left;
-    letter-spacing: 10px; */
-  }
-  .photo1 {
-    width: 65%;
+  .adicionar-sacola {
     height: 100%;
+    width: 100%;
+    background: #dcdfe5;
+    outline: 0.2vw solid #161616;
+    color: #161616;
+    border: none;
     border-radius: 10px;
-    margin: 0px 60px;
+    font-size: 3vh;
+    font-weight: bolder;
+    box-shadow: 1vw 1vw 0 0 #002855;
+    transition: 0.1s ease-in-out;
   }
-  .text {
-    /* height: calc(100vh - 45vh); */
-    flex: auto;
-    font-weight: 500;
-    align-items: center;
-    margin: 20px;
-  }
-  .text h1 {
-    font-size: 30px;
-    margin: 0px 10px;
-    font-weight: 600;
-  }
-  .text h2 {
-    display: inline-block;
-    font-size: 20px;
-    margin: 5px 10px;
-    font-weight: 550;
-  }
-  .text .a {
-    display: inline-block;
-    font-size: 12px;
-    margin: 0px 5px;
-    font-weight: 600;
-    color: #9a9a9a;
-  }
-  .text .b {
-    font-size: 15px;
-    margin-left: 12px;
-    margin-top: 15px;
-    font-weight: 600;
+
+  .adicionar-sacola:active {
+    background-color: #161616;
+    color: #fafafa;
+    outline: 0.2vw solid #fafafa;
+    box-shadow: 0 0 0 0 #002855;
+    transform: translate(1vw, 1vw);
   }
 }
 @media (min-width: 900px) {
-  .container-produto {
-    display: flex;
-    margin: 2rem;
-    margin-top: 5rem;
+  .cont {
+    background: #fafafa;
+    overflow-y: scroll;
     height: 100vh;
-    justify-content: space-around;
+    color: #161616;
   }
+
+  .cont::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .cont::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  .cont::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+  }
+
+  .container-produto {
+    background: #fafafa;
+    display: flex;
+    padding: 3vh;
+    height: 100vh;
+    margin-top: 7vh;
+  }
+
   .foto-section {
-    margin-left: 20vh;
+    text-align: center;
+    width: 50vw;
+    height: 80%;
   }
-  .photo1 {
-    width: 30vw;
-    height: 70vh;
+
+  .foto-produto {
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0.2vw 0.2vw 0 0 #161616;
+    object-fit: cover;
   }
 
   .informacoes {
-    margin-right: 30vh;
+    padding-left: 3vh;
+    color: #161616;
   }
-  .button {
-    background: black;
-    color: white;
-    padding: 10px 100px;
-    /* margin: 4vh; */
-    margin-top: 5vh;
+
+  .nome-preco-parcelas {
+    display: block;
+  }
+  .nome {
+    font-size: 5vh;
+  }
+  .preco-parcelas {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .preco {
+    font-size: 4vh;
+  }
+
+  .parcelas {
+    color: #888888;
+    margin-left: 3vw;
+  }
+
+  .tamanho {
+    font-size: 2.2vh;
+  }
+
+  .tamanho-input {
+    width: 90vw;
+    border: none;
+    background: #fafafa;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 8px;
+    font-size: 3vh;
+    font-weight: bolder;
+    color: #161616;
+    outline: 1px solid #161616;
+    margin-top: 2vh;
+  }
+
+  .tamanho-input:focus {
+    outline: 1px solid #002855;
+  }
+
+  .section-botao {
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    height: 5vh;
+  }
+  .adicionar-sacola {
+    height: 100%;
+    width: 100%;
+    background: #dcdfe5;
+    color: #161616;
+    outline: 0.2vw solid #161616;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 3vh;
+    font-weight: bolder;
+    box-shadow: 0.5vw 0.5vw 0 0 #002855;
+    transition: 0.1s ease-in-out;
   }
-  .botao button {
-    margin-left: 10px;
-    height: 5vh;
-    width: 4vh;
-    font-size: 13px;
-    text-align: center;
-  }
-  .text h1 {
-    font-size: 30px;
-    margin: 0px 10px 5px;
-    font-weight: 600;
-  }
-  .text h2 {
-    display: inline-block;
-    font-size: 20px;
-    margin: 5px 10px;
-    font-weight: 550;
-  }
-  .text .a {
-    display: inline-block;
-    font-size: 15px;
-    margin: 0px 5px;
-    font-weight: 600;
-    color: #9a9a9a;
-  }
-  .text .b {
-    font-size: 20px;
-    margin: 25px 10px 5px;
-    font-weight: 600;
+
+  .adicionar-sacola:active {
+    background-color: #161616;
+    outline: 0.2vw solid #fafafa;
+    color: #fafafa;
+    box-shadow: 0 0 0 0 #002855;
+    transform: translate(0.5vw, 0.5vw);
   }
 }

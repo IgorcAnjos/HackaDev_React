@@ -1,0 +1,25 @@
+.input-checkout {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3vw;
+  margin-bottom: 1vh;
+}
+
+.label-texto {
+  font-size: 3vh;
+  font-weight: lighter;
+  margin-bottom: 1vh;
+}
+
+input {
+  border: none;
+  background-color: #dcdfe5;
+  height: 4.5vh;
+  border-radius: 10px;
+  font-size: 3vh;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: 1px solid #002855;
+}
