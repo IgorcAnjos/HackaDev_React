@@ -6,11 +6,11 @@
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #form-cadastro {
+    background: #fafafa;
     display: block;
-    width: 95vw;
-    height: 82vh;
+    height: 90vh;
     margin: 0 auto;
     margin-right: 0;
     overflow-y: scroll;
@@ -56,13 +56,38 @@
 }
 
 /* Desktop */
-@media (min-width: 600px) {
-  #form-cadastro {
+@media (min-width: 500px) {
+  .cadastro-main {
+    width: 500px;
     display: block;
     width: 500px;
-    height: max-content;
-    margin: 0 auto;
+    margin: auto;
+  }
+
+  #form-cadastro {
+    background: #fafafa;
+    display: block;
+    width: 500px;
+    height: 87vh;
+    margin: auto;
     overflow-y: scroll;
+    border-bottom: 1px solid #dcdfe5;
+    border-left: 1px solid #dcdfe5;
+    border-top: 1px solid #dcdfe5;
+    border-radius: 10px;
+  }
+  #form-cadastro::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  #form-cadastro::-webkit-scrollbar-track {
+    background: #002855;
+  }
+
+  #form-cadastro::-webkit-scrollbar-thumb {
+    background-color: #dcdfe5;
+    width: 100%;
+    /* border-radius: 100px; */
   }
 
   .enviar-cadastro {

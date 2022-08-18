@@ -2,6 +2,9 @@ import React from "react";
 
 import InputCheckout from "../../InputCheckout/InputCheckout";
 import Header from "../../Header/Header";
+import BotoesCheckout from "../../BotoesCheckout/BotoesCheckout";
+import PagamentoCartao from "../../PagamentoCartao/PagamentoCartao";
+import DetalhesCompra from "../../DetalhesCompra/DetalhesCompra";
 
 import "./Checkout.css";
 
@@ -33,6 +36,9 @@ const Checkout = () => {
         size="30"
         maxlength="30"
       />
+      <BotoesCheckout />
+      <PagamentoCartao />
+      <DetalhesCompra />
     </div>
   );
 };

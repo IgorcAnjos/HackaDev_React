@@ -1,7 +1,9 @@
 import React from "react";
-import "./Cadastro.css";
+
 import InputCheckout from "../../InputCheckout/InputCheckout";
 import Header from "../../Header/Header";
+
+import "./Cadastro.css";
 
 const Cadastro = () => {
   return (
