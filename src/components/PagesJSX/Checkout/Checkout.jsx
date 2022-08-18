@@ -8,7 +8,7 @@ import DetalhesCompra from "../../DetalhesCompra/DetalhesCompra";
 
 import "./Checkout.css";
 
-const Checkout = () => {
+const Checkout = ({ listaCarrinho }) => {
   return (
     <div className="checkout">
       <Header texto="Seu Pedido" />
@@ -38,7 +38,7 @@ const Checkout = () => {
       />
       <BotoesCheckout />
       <PagamentoCartao />
-      <DetalhesCompra />
+      <DetalhesCompra listaCarrinho={listaCarrinho} />
     </div>
   );
 };
