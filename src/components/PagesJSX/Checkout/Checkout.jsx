@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import InputCheckout from "../../InputCheckout/InputCheckout";
 import Header from "../../Header/Header";
@@ -10,7 +11,7 @@ import "./Checkout.css";
 
 const Checkout = ({ listaCarrinho }) => {
   return (
-    <div className="checkout">
+    <div classNameName="checkout">
       <Header texto="Seu Pedido" />
       <InputCheckout
         texto="Nome Completo"
@@ -37,8 +38,13 @@ const Checkout = ({ listaCarrinho }) => {
         maxlength="30"
       />
       <BotoesCheckout />
-      <PagamentoCartao />
+      <PagamentoCartao listaCarrinho={listaCarrinho} />
       <DetalhesCompra listaCarrinho={listaCarrinho} />
+      <section className="finalizar-compra">
+        <Link to="/" className="comprar">
+          <button className="botao-comprar">COMPRAR</button>
+        </Link>
+      </section>
     </div>
   );
 };
