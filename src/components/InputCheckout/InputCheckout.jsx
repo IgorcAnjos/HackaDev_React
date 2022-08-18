@@ -2,10 +2,18 @@ import React from "react";
 
 import "./InputCheckout.css";
 
-const InputCheckout = ({ texto, type, nome, id, size, maxlength }) => {
+const InputCheckout = ({
+  texto,
+  type,
+  nome,
+  id,
+  size = 50,
+  maxlength = 50,
+  pattern,
+}) => {
   return (
     <div className="input-checkout">
-      <label class="label-texto" for={id}>
+      <label className="label-texto" htmlFor={id}>
         {texto}
       </label>
       <input
@@ -13,7 +21,9 @@ const InputCheckout = ({ texto, type, nome, id, size, maxlength }) => {
         name={nome}
         id={id}
         size={size}
-        maxlength={maxlength}
+        maxLength={maxlength}
+        pattern={pattern}
+        required
       />
     </div>
   );

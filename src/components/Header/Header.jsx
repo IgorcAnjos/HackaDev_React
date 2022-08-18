@@ -7,12 +7,12 @@ import "./Header.css";
 const Header = ({ texto }) => {
   return (
     <div className="header">
-      <header class="sair-descricao">
+      <header className="sair-descricao">
         <a href="javascript:history.back()">
           <IoIosArrowBack />
         </a>
 
-        <p class="texto-descricao">{texto}</p>
+        <p className="texto-descricao">{texto}</p>
       </header>
     </div>
   );

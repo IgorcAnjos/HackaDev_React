@@ -1,0 +1,48 @@
+@import url("../reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+* {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+@media (max-width: 500px) {
+  /* Detalhes de produto */
+  .detalhes-da-compra {
+    margin: 1vh auto;
+    width: 90vw;
+    border-top: 1px solid #dcdfe5;
+    border-bottom: 1px solid #dcdfe5;
+    margin-bottom: 5vh;
+    transition: 1s ease-in-out;
+  }
+
+  .botao-detalhes-da-compra {
+    font-size: 2vh;
+    text-align: center;
+    margin: 1vh 0;
+    color: #002855;
+  }
+}
+
+/* Desktop */
+@media (min-width: 500px) {
+  /* Detalhes de produto */
+  .detalhes-da-compra {
+    margin: 1vh auto;
+    width: 450px;
+    border-top: 1px solid #dcdfe5;
+    border-bottom: 1px solid #dcdfe5;
+    transition: 0.5s ease-in-out;
+  }
+
+  .botao-detalhes-da-compra {
+    font-size: 15px;
+    text-align: center;
+    margin: 1% 0;
+    color: #002855;
+  }
+
+  .botao-detalhes-da-compra:hover {
+    cursor: pointer;
+  }
+}
