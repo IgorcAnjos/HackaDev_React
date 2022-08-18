@@ -155,8 +155,8 @@
 
   .validade select,
   .validade input {
-    width: 20vw;
-    height: 10vw;
+    width: 150px;
+    height: 5vh;
     border-radius: 5px;
     text-align: center;
     background: #fafafa;
@@ -182,8 +182,8 @@
     font-size: 3vh;
   }
   .parcelas-cartao {
-    width: 90%;
-    height: 10vw;
+    width: 95%;
+    height: 7vh;
     border-radius: 5px;
     background: #fafafa;
     border: none;

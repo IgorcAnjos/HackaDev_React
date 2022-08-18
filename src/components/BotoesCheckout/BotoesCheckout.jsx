@@ -1,4 +1,7 @@
 import React from "react";
+import { BsFillCreditCard2FrontFill } from "react-icons/bs";
+import { MdOutlineMobileFriendly } from "react-icons/md";
+import { IoMdBarcode } from "react-icons/io";
 
 import "./BotoesCheckout.css";
 
@@ -12,19 +15,19 @@ function BotoesCheckout() {
         <ul className="lista formas-pagamento">
           <li className="lista-pagamento item">
             <button className="selecao-forma" id="cartao-credito">
-              <i className="fa-solid fa-credit-card"></i>
+              <BsFillCreditCard2FrontFill className="i" />
               <p className="texto-forma-pagamento">Cartão de Crédito</p>
             </button>
           </li>
           <li className="lista-pagamento item">
             <button className="selecao-forma" id="boleto">
-              <i className="fa-solid fa-barcode"></i>
+              <IoMdBarcode className="i" />
               <p className="texto-forma-pagamento">Boleto</p>
             </button>
           </li>
           <li className="lista-pagamento item">
             <button className="selecao-forma" id="pix">
-              <i className="fa-brands fa-pix"></i>
+              <MdOutlineMobileFriendly className="i" />
               <p className="texto-forma-pagamento">PIX</p>
             </button>
           </li>
