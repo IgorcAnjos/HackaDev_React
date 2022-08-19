@@ -24,28 +24,39 @@
 
   .nome-tamanho-quantidade {
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .nome {
-    font-size: 2vh;
+    font-size: 5vw;
     margin-bottom: 2vh;
     text-align: center;
+  }
+  .tam,
+  .quant {
+    font-size: 4vw;
   }
 
   .tamanho-quantidade {
     display: flex;
-    font-size: 1.7vh;
+    align-items: center;
     justify-content: space-around;
+    margin-bottom: 1vh;
   }
   .preco-lista {
-    font-size: 2.5vh;
     display: flex;
     align-items: center;
   }
 
+  .preco-produto {
+    font-size: 4vw;
+  }
+
   .item-lista .total-preco,
   .item-lista .preco {
-    font-size: 2.5vh;
+    font-size: 2.5vw;
   }
 }
 
@@ -75,7 +86,7 @@
     justify-content: space-around;
   }
   .nome {
-    font-size: 3.5vh;
+    font-size: 3vh;
     margin-bottom: 2%;
     text-align: center;
   }
@@ -89,7 +100,7 @@
 
   .tam,
   .quant {
-    font-size: 3vh;
+    font-size: 2.7vh;
   }
   .preco-lista {
     display: flex;
