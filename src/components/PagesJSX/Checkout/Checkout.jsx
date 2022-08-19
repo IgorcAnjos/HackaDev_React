@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
 import InputCheckout from "../../InputCheckout/InputCheckout";
@@ -10,8 +10,9 @@ import DetalhesCompra from "../../DetalhesCompra/DetalhesCompra";
 import "./Checkout.css";
 
 const Checkout = ({ listaCarrinho }) => {
+  const [formaDePagamento, setFormaDePagamento] = useState("cartaoCredito");
   return (
-    <div classNameName="checkout">
+    <div className="checkout-container">
       <Header texto="Seu Pedido" />
       <InputCheckout
         texto="Nome Completo"
@@ -37,8 +38,15 @@ const Checkout = ({ listaCarrinho }) => {
         size="30"
         maxlength="30"
       />
-      <BotoesCheckout />
-      <PagamentoCartao listaCarrinho={listaCarrinho} />
+      <BotoesCheckout
+        setFormaDePagamento={setFormaDePagamento}
+        formaDePagamento={formaDePagamento}
+      />
+      {formaDePagamento === "cartaoCredito" ? (
+        <PagamentoCartao listaCarrinho={listaCarrinho} />
+      ) : (
+        ""
+      )}
       <DetalhesCompra listaCarrinho={listaCarrinho} />
       <section className="finalizar-compra">
         <Link to="/" className="comprar">

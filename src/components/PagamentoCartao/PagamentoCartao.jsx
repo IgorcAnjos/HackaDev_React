@@ -35,7 +35,7 @@ function PagamentoCartao({ listaCarrinho }) {
           <div className="entrada-mes">
             <label
               className="texto-informacao-cartao"
-              for="validade-mes-cartao"
+              htmlFor="validade-mes-cartao"
             >
               Mês
             </label>
@@ -58,7 +58,7 @@ function PagamentoCartao({ listaCarrinho }) {
           <div className="entrada-ano">
             <label
               className="texto-informacao-cartao"
-              for="validade-ano-cartao"
+              htmlFor="validade-ano-cartao"
             >
               Ano
             </label>
@@ -78,14 +78,17 @@ function PagamentoCartao({ listaCarrinho }) {
             </select>
           </div>
           <div className="entrada-codigo-verificacao">
-            <label className="texto-informacao-cartao" for="codigo-verificacao">
+            <label
+              className="texto-informacao-cartao"
+              htmlFor="codigo-verificacao"
+            >
               CVV
             </label>
             <input type="number" placeholder="CVV" id="codigo-verificacao" />
           </div>
         </section>
         <div className="entrada-parcelas">
-          <label className="texto-informacao-cartao" for="parcelas">
+          <label className="texto-informacao-cartao" htmlFor="parcelas">
             Parcelas
           </label>
 

@@ -1,25 +1,24 @@
 @import url("../../reset/reset.css");
 
 @media (max-width: 500px) {
-  .checkout {
+  .checkout-container {
     top: 0;
     height: max-content;
     margin: auto;
     background: #fafafa;
-    padding: 1vw;
     height: 100vh;
     overflow-y: scroll;
   }
 
-  .checkout::-webkit-scrollbar {
+  .checkout-container::-webkit-scrollbar {
     width: 4px;
   }
 
-  .checkout::-webkit-scrollbar-track {
+  .checkout-container::-webkit-scrollbar-track {
     background: #002855;
   }
 
-  .checkout::-webkit-scrollbar-thumb {
+  .checkout-container::-webkit-scrollbar-thumb {
     background-color: #dcdfe5;
     width: 100%;
     /* border-radius: 100px; */
@@ -36,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fafafa;
+    background: transparent;
   }
   .finalizar-compra .comprar {
     width: 85vw;
@@ -63,33 +62,34 @@
 
 /* Desktop */
 @media (min-width: 500px) {
-  .checkout {
-    top: 0;
+  .checkout-container {
     width: 500px;
     margin: 0 auto;
-    background: #fafafa;
+    margin-top: 1vh;
+    background-color: #fafafa;
     padding: 5px;
+    padding-bottom: 5vh;
     height: 97vh;
     overflow-y: scroll;
     border-bottom: 1px solid #dcdfe5;
     border-left: 1px solid #dcdfe5;
     border-top: 1px solid #dcdfe5;
     border-radius: 10px;
-    padding-bottom: 6vh;
   }
+
   .texto-descricao {
     font-size: 28px;
   }
 
-  .checkout::-webkit-scrollbar {
+  .checkout-container::-webkit-scrollbar {
     width: 4px;
   }
 
-  .checkout::-webkit-scrollbar-track {
+  .checkout-container::-webkit-scrollbar-track {
     background: #002855;
   }
 
-  .checkout::-webkit-scrollbar-thumb {
+  .checkout-container::-webkit-scrollbar-thumb {
     background-color: #dcdfe5;
     width: 100%;
     /* border-radius: 100px; */
