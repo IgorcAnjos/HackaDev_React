@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import Header from "../../Header/Header";
 
 import "./Produto.css";
 
@@ -36,6 +37,8 @@ const Produto = ({
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
       />
+      <div className="espacamento"></div>
+      <Header texto={produto.nome} />
       <div className="container-produto">
         <div className="foto-section">
           <img className="foto-produto" src={produto.imagem} alt="" />
