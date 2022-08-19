@@ -96,6 +96,15 @@ function PagamentoCartao({ listaCarrinho }) {
             <option defaultValue="1">1x de R$ {total.toFixed(2)}</option>
             <option value="2">2x de R$ {(total / 2).toFixed(2)}</option>
             <option value="3">3x de {(total / 3).toFixed(2)}</option>
+            <option value="3">4x de {((total * 1.1) / 4).toFixed(2)}</option>
+            <option value="3">5x de {((total * 1.15) / 5).toFixed(2)}</option>
+            <option value="3">6x de {((total * 1.2) / 6).toFixed(2)}</option>
+            <option value="3">7x de {((total * 1.25) / 7).toFixed(2)}</option>
+            <option value="3">8x de {((total * 1.3) / 8).toFixed(2)}</option>
+            <option value="3">9x de {((total * 1.35) / 9).toFixed(2)}</option>
+            <option value="3">10x de {((total * 1.4) / 10).toFixed(2)}</option>
+            <option value="3">11x de {((total * 1.45) / 11).toFixed(2)}</option>
+            <option value="3">12x de {((total * 1.5) / 12).toFixed(2)}</option>
           </select>
         </div>
       </fieldset>

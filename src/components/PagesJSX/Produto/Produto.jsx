@@ -74,7 +74,7 @@ const Produto = ({
                   (produto.preco - produto.preco * (produto.desconto / 100)) /
                   3
                 ).toFixed(2)}{" "}
-                <s /> juros
+                <s /> s/ juros
               </p>
             </div>
           </div>

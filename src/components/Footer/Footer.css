@@ -16,15 +16,21 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  p {
-    font-size: 2vh;
+  .nomes {
+    font-size: 3vh;
     font-weight: bold;
   }
+
+  .desenvolvedores .links {
+    color: #002855;
+    cursor: pointer;
+  }
+
   .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: bold;
   }
   .copyright svg {
@@ -32,6 +38,7 @@
   }
   .git-logo {
     margin: auto;
+    cursor: pointer;
   }
   .git-logo svg {
     font-size: 5vh;
@@ -76,9 +83,14 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  p {
-    font-size: 2vh;
+  .nomes {
+    font-size: 3vh;
     font-weight: bold;
+  }
+
+  .desenvolvedores .links {
+    color: #002855;
+    cursor: pointer;
   }
   .copyright {
     display: flex;
@@ -100,6 +112,7 @@
   }
   .git-logo {
     order: 3;
+    cursor: pointer;
   }
   a .git-logo {
     text-decoration: none;
