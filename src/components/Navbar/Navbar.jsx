@@ -1,13 +1,12 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { FaBars } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 
-import "./Navbar.css";
-
 import Menu from "../Menu/Menu";
 import Carrinho from "../Carrinho/Carrinho";
+
+import "./Navbar.css";
 
 const Navbar = ({
   listaCarrinho,
@@ -16,6 +15,7 @@ const Navbar = ({
   handleExcluirListaCarrinnho,
   subTotal,
   handleSubTotal,
+  ListaDeProdutos,
 }) => {
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
@@ -67,6 +67,7 @@ const Navbar = ({
         handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
+        ListaDeProdutos={ListaDeProdutos}
       />
     </>
   );

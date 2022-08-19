@@ -1,6 +1,5 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
-
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import ProdutoCarrinho from "../ProdutoCarrinho/ProdutoCarrinho";
@@ -16,6 +15,7 @@ const Carrinho = ({
   handleExcluirListaCarrinnho,
   subTotal,
   handleSubTotal,
+  ListaDeProdutos,
 }) => {
   return abrirCarrinho ? (
     <div className="sombra-carrinho">
@@ -27,7 +27,7 @@ const Carrinho = ({
       ></div>
       <nav className="carrinho">
         <section id="sair-quantidade">
-          <a href="#">
+          <div className="a">
             <AiOutlineArrowLeft
               id="sair-carrinho"
               onClick={() => {
@@ -35,7 +35,7 @@ const Carrinho = ({
               }}
             />
             <p id="sacola">Sacola ({listaCarrinho.length})</p>
-          </a>
+          </div>
         </section>
         <section className="secao-carrinho">
           <ul className="carrinho-produtos">
@@ -47,6 +47,7 @@ const Carrinho = ({
                   handleSubtracaoListaCarrinnho={handleSubtracaoListaCarrinnho}
                   handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
                   handleSubTotal={handleSubTotal}
+                  ListaDeProdutos={ListaDeProdutos}
                 />
               </li>
             ))}

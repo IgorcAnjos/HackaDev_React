@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./Banner.css";
 
 import foto1 from "./foto1.jpeg";

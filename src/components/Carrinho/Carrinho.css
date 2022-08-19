@@ -48,7 +48,7 @@
   } */
 
   /* seção superior (sair e quantidade) */
-  .carrinho #sair-quantidade a {
+  .carrinho #sair-quantidade .a {
     color: #fafafa;
     font-size: 3vh;
     height: 7vh;

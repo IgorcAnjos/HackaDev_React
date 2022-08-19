@@ -25,6 +25,7 @@ const Home = ({
         handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
+        ListaDeProdutos={ListaDeProdutos}
       />
       <Banner />
       <Catalogo ListaDeProdutos={ListaDeProdutos} />
