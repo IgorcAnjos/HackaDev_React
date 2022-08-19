@@ -38,7 +38,8 @@
   .foto-section {
     text-align: center;
     padding: 3vh;
-    height: 110vw;
+    padding-top: 0;
+    height: 120vw;
   }
 
   .foto-produto {
@@ -169,6 +170,7 @@
     background: #fafafa;
     display: flex;
     padding: 3vh;
+    padding-top: 0;
     height: 100vh;
   }
 
