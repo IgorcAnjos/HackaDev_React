@@ -59,6 +59,10 @@
     padding-left: 2vw;
   }
 
+  .tamanho {
+    text-transform: capitalize;
+  }
+
   .nome-tamanho-preco-quantidade .tamanho-preco {
     display: flex;
     justify-content: space-between;

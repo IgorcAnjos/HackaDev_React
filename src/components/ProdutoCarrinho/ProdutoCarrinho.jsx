@@ -9,9 +9,16 @@ function ProdutoCarrinho({
   handleSubtracaoListaCarrinnho,
   handleExcluirListaCarrinnho,
   handleSubTotal,
+  ListaDeProdutos,
 }) {
   const novoid =
     produto.id.length === 3 ? produto.id.substring(0, 2) : produto.id[0];
+
+  const produtoEquivalente = ListaDeProdutos.filter(
+    (item) => item.id === parseInt(novoid)
+  );
+
+  const equivalenciaQuantidadeTamanho = `quantidade_${produto.tamanho}`;
   return (
     <section className="produto">
       <div className="foto-exclusao">
@@ -51,6 +58,12 @@ function ProdutoCarrinho({
             onClick={() => {
               handleAdicaoListaCarrinnho(novoid, produto.tamanho);
             }}
+            style={
+              produto.quantidade >=
+              produtoEquivalente[0][equivalenciaQuantidadeTamanho]
+                ? { border: "1px solid crimson" }
+                : {}
+            }
           >
             +
           </button>

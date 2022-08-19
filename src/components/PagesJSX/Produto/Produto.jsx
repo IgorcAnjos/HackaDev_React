@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 
@@ -33,6 +34,7 @@ const Produto = ({
         handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
+        ListaDeProdutos={ListaDeProdutos}
       />
       <div className="container-produto">
         <div className="foto-section">
@@ -52,11 +54,11 @@ const Produto = ({
           <div className="selecao-tamnho">
             <h4 className="tamanho">Escolha o tamanho</h4>
             <select defaultValue={"p"} class="tamanho-input" id="tamanho">
-              <option value="P" selected="selected">
+              <option value="p" selected="selected">
                 P
               </option>
-              <option value="M">M</option>
-              <option value="G">G</option>
+              <option value="m">M</option>
+              <option value="g">G</option>
             </select>
           </div>
 

@@ -23,13 +23,25 @@ const RouterPages = () => {
       (produto) => produto.id === idClick
     );
 
+    const equivalencia = ListaDeProdutos.filter(
+      (produto) => produto.id === parseInt(id)
+    );
+
+    const equivalenciaQuantidadeTamanho = `quantidade_${tamanho}`;
+
     if (produtoExiste.length > 0) {
-      const indexProduto = listaCarrinho.indexOf(produtoExiste[0]);
+      if (
+        produtoExiste[0].quantidade <
+        equivalencia[0][equivalenciaQuantidadeTamanho]
+      ) {
+        const indexProduto = listaCarrinho.indexOf(produtoExiste[0]);
 
-      listaCarrinho[indexProduto].quantidade = produtoExiste[0].quantidade + 1;
-      const novaListaCarrinho = [...listaCarrinho];
+        listaCarrinho[indexProduto].quantidade =
+          produtoExiste[0].quantidade + 1;
+        const novaListaCarrinho = [...listaCarrinho];
 
-      setListaCarrinho(novaListaCarrinho);
+        setListaCarrinho(novaListaCarrinho);
+      }
     } else {
       const findProduto = ListaDeProdutos.filter(
         (produto) => produto.id === id
