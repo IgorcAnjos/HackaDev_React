@@ -55,8 +55,20 @@ const Carrinho = ({
         </section>
         <section className="subtotal-finalizar">
           <p id="subtotal">Subtotal - R$ {subTotal}</p>
-          <Link to={`/checkout`}>
-            <button id="finalizar">Finalizar</button>
+          <Link
+            to={listaCarrinho.length > 0 ? `/checkout` : {}}
+            className="link"
+          >
+            <button
+              id="finalizar"
+              style={
+                listaCarrinho.length === 0
+                  ? { background: "crimson", fontWeight: "bolder" }
+                  : {}
+              }
+            >
+              {listaCarrinho.length === 0 ? "Sacola Vazia" : "Finalizar"}
+            </button>
           </Link>
         </section>
       </nav>

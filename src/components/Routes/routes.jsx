@@ -51,7 +51,8 @@ const RouterPages = () => {
         id: idClick,
         imagem: findProduto.imagem,
         nome: findProduto.nome,
-        preco: findProduto.preco,
+        preco:
+          findProduto.preco - findProduto.preco * (findProduto.desconto / 100),
         tamanho: tamanho,
         quantidade: 1,
       };
