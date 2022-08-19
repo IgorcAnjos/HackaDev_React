@@ -126,7 +126,7 @@ const produtos = [
     id: 9,
     imagem:
       "https://media.discordapp.net/attachments/1008727983223230494/1008735264186847232/unknown.png?width=362&height=634",
-    nome: "Terno COnjunto Cinza Xadrez",
+    nome: "Terno Conjunto Cinza Xadrez",
     descricao: "produto 9",
     id_categoria: categoria[2].id,
     preco: 4000.0,
