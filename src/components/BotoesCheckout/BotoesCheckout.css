@@ -46,6 +46,7 @@
     margin-bottom: 2vh;
     color: #dcdfe5;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .formas-de-pagamento {

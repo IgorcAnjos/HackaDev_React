@@ -25,6 +25,7 @@
     padding-bottom: 1vh;
     box-shadow: 0.3vh 0.3vh 0px 0.2vh #161616;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .imagem-catalogo {
@@ -35,12 +36,32 @@
     height: 75%;
   }
 
-  .item-catalogo .nome-item,
-  .item-catalogo .preco {
-    font-size: 2.5vh;
+  .item-catalogo .nome-item {
+    font-size: 4vw;
     margin-top: 1.5vh;
     margin-bottom: 0;
     transition: 1s ease-in-out;
+  }
+
+  .preco-desconto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .preco,
+  .desconto {
+    font-size: 3.5vw;
+  }
+
+  .desconto {
+    background: #002855;
+    color: #fafafa;
+    padding: 1vw;
+    font-weight: bold;
+    border: 0.2vh solid white;
+    border-radius: 0.3vh;
   }
 }
 
@@ -68,6 +89,7 @@
     border-radius: 1vw;
     box-shadow: 0.3vh 0.3vh 0px 0px #161616;
     padding-bottom: 1vw;
+    cursor: pointer;
   }
 
   .imagem-catalogo {
@@ -78,12 +100,28 @@
     height: 80%;
   }
 
-  .item-catalogo .nome-item,
-  .item-catalogo .preco {
+  .item-catalogo .nome-item {
     font-size: 3vh;
     margin-top: 1vh;
   }
-  .nome-item {
-    margin-top: 10px;
+  .preco-desconto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .preco,
+  .desconto {
+    font-size: 3vw;
+  }
+
+  .desconto {
+    background: #002855;
+    color: #fafafa;
+    padding: 0.5vw;
+    font-weight: bold;
+    border: 0.2vh solid white;
+    border-radius: 0.3vh;
   }
 }

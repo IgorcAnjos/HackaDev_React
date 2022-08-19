@@ -37,6 +37,7 @@ const Catalogo = ({ ListaDeProdutos }) => {
               imagem={item.imagem}
               nome={item.nome}
               preco={item.preco}
+              desconto={item.desconto}
               colunas={colunas}
             />
           </div>

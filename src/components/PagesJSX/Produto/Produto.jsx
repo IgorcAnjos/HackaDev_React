@@ -45,9 +45,33 @@ const Produto = ({
           <div className="nome-preco-parcelas">
             <h1 className="nome">{produto.nome}</h1>
             <div className="preco-parcelas">
-              <p className="preco">R$ {produto.preco.toFixed(2)}</p>
+              <p
+                className="preco"
+                style={
+                  produto.desconto === 0
+                    ? {}
+                    : {
+                        background: "crimson",
+                        padding: "1vw",
+                        color: "white",
+                        borderRadius: "1vw",
+                        textDecoration: " 0.2vh underline #161616",
+                      }
+                }
+              >
+                R${" "}
+                {(
+                  produto.preco -
+                  produto.preco * (produto.desconto / 100)
+                ).toFixed(2)}
+              </p>
               <p className="parcelas">
-                em até 3x {(produto.preco / 3).toFixed(2)}
+                em até 3x{" "}
+                {(
+                  (produto.preco - produto.preco * (produto.desconto / 100)) /
+                  3
+                ).toFixed(2)}{" "}
+                <s /> juros
               </p>
             </div>
           </div>

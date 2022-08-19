@@ -91,6 +91,7 @@
     color: #161616;
     outline: 1px solid #161616;
     margin-top: 1vh;
+    cursor: pointer;
   }
 
   .tamanho-input:focus {
@@ -127,6 +128,7 @@
     font-weight: bolder;
     box-shadow: 1vw 1vw 0 0 #002855;
     transition: 0.1s ease-in-out;
+    cursor: pointer;
   }
 
   .adicionar-sacola:active {
@@ -224,6 +226,7 @@
     color: #161616;
     outline: 1px solid #161616;
     margin-top: 2vh;
+    cursor: pointer;
   }
 
   .tamanho-input:focus {
@@ -247,6 +250,7 @@
     font-weight: bolder;
     box-shadow: 0.5vw 0.5vw 0 0 #002855;
     transition: 0.1s ease-in-out;
+    cursor: pointer;
   }
 
   .adicionar-sacola:active {
