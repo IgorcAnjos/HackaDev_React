@@ -6,7 +6,6 @@
     height: max-content;
     margin: auto;
     background: #fafafa;
-    padding: 1vw;
     height: 100vh;
     overflow-y: scroll;
   }
@@ -36,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fafafa;
+    background: transparent;
   }
   .finalizar-compra .comprar {
     width: 85vw;
@@ -64,8 +63,18 @@
 /* Desktop */
 @media (min-width: 500px) {
   .checkout-container {
-    width: 50vw;
-    overflow-y: hidden;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 1vh;
+    background-color: #fafafa;
+    padding: 5px;
+    padding-bottom: 5vh;
+    height: 97vh;
+    overflow-y: scroll;
+    border-bottom: 1px solid #dcdfe5;
+    border-left: 1px solid #dcdfe5;
+    border-top: 1px solid #dcdfe5;
+    border-radius: 10px;
   }
 
   .texto-descricao {
@@ -88,7 +97,7 @@
 
   /* Botão de finalizar o pagamento */
   .finalizar-compra {
-    width: 100%;
+    width: 500px;
     margin: 0 auto;
     margin-left: 0;
     height: 6vh;

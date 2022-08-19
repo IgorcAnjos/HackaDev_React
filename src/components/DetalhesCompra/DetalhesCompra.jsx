@@ -5,11 +5,11 @@ import "./DetalhesCompra.css";
 
 function DetalhesCompra({ listaCarrinho }) {
   return (
-    <section class="detalhes-da-compra">
-      <div class="botao-detalhes-da-compra" id="botao-detalhes-da-compra">
+    <section className="detalhes-da-compra">
+      <div className="botao-detalhes-da-compra" id="botao-detalhes-da-compra">
         <p>Detalhes da Compra</p>
       </div>
-      <ul class="lista-produtos" id="lista-produtos">
+      <ul className="lista-produtos" id="lista-produtos">
         {listaCarrinho.map((produto) => (
           <ListaProdutosCheckout
             key={produto.id}
