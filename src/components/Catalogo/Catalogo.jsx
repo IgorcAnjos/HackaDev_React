@@ -1,12 +1,34 @@
 import { React, useState } from "react";
+import { BiGridVertical, BiDotsVertical } from "react-icons/bi";
+
 import ProdutoCatalogo from "../ProdutoCatalogo/ProdutoCatalogo";
 
 import "./Catalogo.css";
 
 const Catalogo = ({ ListaDeProdutos }) => {
+  const [colunas, setColunas] = useState("coluna2");
   return (
     <section className="catalogo">
-      <h1 className="titulo-catalogo">Catálogo</h1>
+      <div className="titulo-visualisa-colunas">
+        <h1 className="titulo-catalogo">Catálogo</h1>
+        <div className="visualiza-colunas">
+          {colunas === "coluna2" ? (
+            <BiDotsVertical
+              className="coluna"
+              onClick={() => {
+                setColunas("coluna1");
+              }}
+            />
+          ) : (
+            <BiGridVertical
+              className="coluna"
+              onClick={() => {
+                setColunas("coluna2");
+              }}
+            />
+          )}
+        </div>
+      </div>
       <section className="flex-container">
         {ListaDeProdutos.map((item) => (
           <div key={item.id}>
@@ -15,6 +37,7 @@ const Catalogo = ({ ListaDeProdutos }) => {
               imagem={item.imagem}
               nome={item.nome}
               preco={item.preco}
+              colunas={colunas}
             />
           </div>
         ))}
