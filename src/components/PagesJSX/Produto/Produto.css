@@ -6,6 +6,9 @@
 }
 
 @media (max-width: 900px) {
+  .espacamento {
+    height: 7vh;
+  }
   .cont {
     background: #fafafa;
     overflow-y: scroll;
@@ -27,7 +30,6 @@
   }
 
   .container-produto {
-    margin-top: 7vh;
     background: #fafafa;
     display: flex;
     flex-direction: column;
@@ -140,6 +142,9 @@
   }
 }
 @media (min-width: 900px) {
+  .espacamento {
+    height: 7vh;
+  }
   .cont {
     background: #fafafa;
     overflow-y: scroll;
@@ -165,7 +170,6 @@
     display: flex;
     padding: 3vh;
     height: 100vh;
-    margin-top: 7vh;
   }
 
   .foto-section {
