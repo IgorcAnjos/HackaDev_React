@@ -15,6 +15,7 @@ const Produto = ({
   handleExcluirListaCarrinnho,
   subTotal,
   handleSubTotal,
+  setBuscar,
 }) => {
   const parametros = useParams();
 
@@ -36,6 +37,7 @@ const Produto = ({
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
+        setBuscar={setBuscar}
       />
       <div className="espacamento"></div>
       <Header texto={produto.nome} />

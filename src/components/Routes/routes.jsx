@@ -100,6 +100,17 @@ const RouterPages = () => {
     handleSubTotal(listaCarrinho);
   }, [listaCarrinho]);
 
+  const [ListaDeBusca, SetListaDeBusca] = useState([]);
+  const [buscar, setBuscar] = useState("");
+
+  useEffect(() => {
+    const novaListaProdutos = ListaDeProdutos.filter((produto) =>
+      produto.nome.toLowerCase().includes(buscar.toLowerCase())
+    );
+
+    SetListaDeBusca(novaListaProdutos);
+  }, [buscar]);
+
   return (
     <Router>
       <Routes>
@@ -114,6 +125,7 @@ const RouterPages = () => {
               handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
               subTotal={subTotal}
               handleSubTotal={handleSubTotal}
+              setBuscar={setBuscar}
             />
           }
         />
@@ -126,7 +138,7 @@ const RouterPages = () => {
         <Route path="/novidades" element={<Novidades />} />
         <Route
           path="/busca"
-          element={<Busca ListaDeProdutos={ListaDeProdutos} />}
+          element={<Busca ListaDeBusca={ListaDeBusca} setBuscar={setBuscar} />}
         />
         <Route path="/duvidas" element={<Duvidas />} />
         <Route
@@ -140,6 +152,7 @@ const RouterPages = () => {
               handleExcluirListaCarrinnho={handleExcluirListaCarrinnho}
               subTotal={subTotal}
               handleSubTotal={handleSubTotal}
+              setBuscar={setBuscar}
             />
           }
         />
