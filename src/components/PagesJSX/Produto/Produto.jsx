@@ -88,21 +88,21 @@ const Produto = ({
           <div className="selecao-tamnho">
             <h4 className="tamanho">Escolha o tamanho</h4>
             <select defaultValue={"p"} class="tamanho-input" id="tamanho">
-              {produto.quantidade_p != 0 ? (
+              {produto.quantidade_p !== 0 ? (
                 <option value="p" selected="selected">
                   P
                 </option>
               ) : (
                 ""
               )}
-              {produto.quantidade_m != 0 ? (
+              {produto.quantidade_m !== 0 ? (
                 <option value="m" selected="selected">
                   M
                 </option>
               ) : (
                 ""
               )}
-              {produto.quantidade_g != 0 ? (
+              {produto.quantidade_g !== 0 ? (
                 <option value="g" selected="selected">
                   G
                 </option>
