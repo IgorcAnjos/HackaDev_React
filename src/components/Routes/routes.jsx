@@ -14,6 +14,8 @@ const getProdutos = require("../../ArrayBancoDeDados/ArrayBancoDeDados");
 
 const RouterPages = () => {
   const ListaDeProdutos = getProdutos();
+
+  // Funções pertinentes a lista de carrinho, adicionar subtrair e verificar todas estas ações
   const [listaCarrinho, setListaCarrinho] = useState([]);
 
   const handleAdicaoListaCarrinnho = (id, tamanho) => {
@@ -85,6 +87,7 @@ const RouterPages = () => {
     setListaCarrinho(novaListaCarrinho);
   };
 
+  // Funções pertinentes ao subtotal da soma de todos os produtos no carrinho
   const [subTotal, setSubTotal] = useState(0);
 
   const handleSubTotal = (listaCarrinho) => {
@@ -100,16 +103,31 @@ const RouterPages = () => {
     handleSubTotal(listaCarrinho);
   }, [listaCarrinho]);
 
+  // Definindo  funções pertinentes da página de pesquisa
   const [ListaDeBusca, SetListaDeBusca] = useState([]);
-  const [buscar, setBuscar] = useState("");
+  const [buscar, setBuscar] = useState("promocao");
 
   useEffect(() => {
-    const novaListaProdutos = ListaDeProdutos.filter((produto) =>
-      produto.nome.toLowerCase().includes(buscar.toLowerCase())
-    );
+    if (buscar !== "promocao") {
+      const novaListaProdutos = ListaDeProdutos.filter((produto) =>
+        produto.nome.toLowerCase().includes(buscar.toLowerCase())
+      );
+      SetListaDeBusca(novaListaProdutos);
+    } else {
+      const novaListaProdutos = ListaDeProdutos.filter(
+        (produto) => produto.desconto > 0
+      );
+      SetListaDeBusca(novaListaProdutos);
+    }
+  }, [buscar, ListaDeProdutos]);
 
-    SetListaDeBusca(novaListaProdutos);
-  }, [buscar]);
+  // Funções pertinentes ao login
+  const [login, setLogin] = useState([]);
+
+  const handleLoginAction = (cadastro) => {
+    setLogin([...login, "login Efeturado"]);
+    console.log(login);
+  };
 
   return (
     <Router>
@@ -126,11 +144,18 @@ const RouterPages = () => {
               subTotal={subTotal}
               handleSubTotal={handleSubTotal}
               setBuscar={setBuscar}
+              login={login}
             />
           }
         />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
+        <Route
+          path="/login"
+          element={<Login handleLoginAction={handleLoginAction} />}
+        />
+        <Route
+          path="/cadastro"
+          element={<Cadastro handleLoginAction={handleLoginAction} />}
+        />
         <Route
           path="/checkout"
           element={<Checkout listaCarrinho={listaCarrinho} />}
@@ -153,6 +178,7 @@ const RouterPages = () => {
               subTotal={subTotal}
               handleSubTotal={handleSubTotal}
               setBuscar={setBuscar}
+              login={login}
             />
           }
         />

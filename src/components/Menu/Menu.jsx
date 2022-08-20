@@ -5,7 +5,7 @@ import { IoIosClose } from "react-icons/io";
 
 import "./Menu.css";
 
-const Menu = ({ abrirMenu, setAbrirMenu, setBuscar }) => {
+const Menu = ({ abrirMenu, setAbrirMenu, setBuscar, login }) => {
   if (window.innerWidth >= 900) {
     setAbrirMenu(true);
   }
@@ -39,9 +39,15 @@ const Menu = ({ abrirMenu, setAbrirMenu, setBuscar }) => {
             </section>
             <section id="login">
               <li className="navbar item">
-                <Link to="/login">
-                  <p className="navbar-text">ENTRAR</p>
-                </Link>
+                {login.length === 0 ? (
+                  <Link to="/login">
+                    <p className="navbar-text">ENTRAR</p>
+                  </Link>
+                ) : (
+                  <Link to="/">
+                    <p className="navbar-text">KingsMan</p>
+                  </Link>
+                )}
               </li>
             </section>
             <section id="buscar">
@@ -114,9 +120,14 @@ const Menu = ({ abrirMenu, setAbrirMenu, setBuscar }) => {
             <div className="barra-separacao"></div>
             <section id="promocoes">
               <li className="navbar item">
-                <a href={"/"}>
+                <Link
+                  to="/busca"
+                  onClick={() => {
+                    setBuscar("promocao");
+                  }}
+                >
                   <p className="navbar-text">PROMOÇÕES</p>
-                </a>
+                </Link>
               </li>
             </section>
             <div className="barra-separacao"></div>

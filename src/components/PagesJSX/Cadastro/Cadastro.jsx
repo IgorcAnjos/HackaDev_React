@@ -5,7 +5,7 @@ import Header from "../../Header/Header";
 
 import "./Cadastro.css";
 
-const Cadastro = () => {
+const Cadastro = ({ handleLoginAction }) => {
   return (
     <main class="cadastro-main">
       <Header texto="Cadastro" />
@@ -93,7 +93,14 @@ const Cadastro = () => {
           />
           <div class="enviar-cadastro">
             <a href="../../home.html">
-              <button class="enviar-button">Enviar</button>
+              <button
+                class="enviar-button"
+                onClick={() => {
+                  handleLoginAction();
+                }}
+              >
+                Enviar
+              </button>
             </a>
           </div>
         </form>

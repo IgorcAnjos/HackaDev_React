@@ -6,7 +6,7 @@ import InputCheckout from "../../InputCheckout/InputCheckout";
 
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ handleLoginAction }) => {
   return (
     <main className="login-main">
       <Header texto="Login" />
@@ -28,13 +28,20 @@ const Login = () => {
             size="20"
             maxLength="20"
           />
-          <a href="../../home.html" className="login-link">
+          <Link to="/" className="login-link">
             Esqueceu sua senha?
-          </a>
+          </Link>
 
-          <a className="botao-entrar" href="../../home.html">
-            <button className="login-btn">Entrar</button>
-          </a>
+          <Link to="/" className="botao-entrar">
+            <button
+              className="login-btn"
+              onClick={() => {
+                handleLoginAction();
+              }}
+            >
+              Entrar
+            </button>
+          </Link>
         </form>
 
         <div className="redirect-cadastro">
