@@ -30,18 +30,24 @@ const Catalogo = ({ ListaDeProdutos }) => {
         </div>
       </div>
       <section className="flex-container">
-        {ListaDeProdutos.map((item) => (
-          <div key={item.id}>
-            <ProdutoCatalogo
-              id={item.id}
-              imagem={item.imagem}
-              nome={item.nome}
-              preco={item.preco}
-              desconto={item.desconto}
-              colunas={colunas}
-            />
-          </div>
-        ))}
+        {ListaDeProdutos.map((item) =>
+          item.quantidade_p === 0 &&
+          item.quantidade_m === 0 &&
+          item.quantidade_g === 0 ? (
+            ""
+          ) : (
+            <div key={item.id}>
+              <ProdutoCatalogo
+                id={item.id}
+                imagem={item.imagem}
+                nome={item.nome}
+                preco={item.preco}
+                desconto={item.desconto}
+                colunas={colunas}
+              />
+            </div>
+          )
+        )}
       </section>
     </section>
   );
