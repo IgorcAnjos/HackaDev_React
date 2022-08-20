@@ -18,10 +18,22 @@
   }
 
   .botao-detalhes-da-compra {
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: center;
     margin: 1vh 0;
     color: #002855;
+  }
+
+  #botao-detalhes-da-compra {
+    text-decoration: underline;
+  }
+  .botao-detalhes-da-compra:hover {
+    cursor: pointer;
+  }
+  .total {
+    text-decoration: none;
+    font-size: 3.5vh;
+    color: #161616;
   }
 }
 
@@ -45,5 +57,9 @@
 
   .botao-detalhes-da-compra:hover {
     cursor: pointer;
+  }
+
+  .total {
+    font-size: 3vh;
   }
 }
