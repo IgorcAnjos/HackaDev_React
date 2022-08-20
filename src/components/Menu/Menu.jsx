@@ -44,7 +44,14 @@ const Menu = ({ abrirMenu, setAbrirMenu }) => {
                 </Link>
               </li>
             </section>
-            {/* <!-- <div className="barra-separacao"></div> --> */}
+            <section id="buscar">
+              <li className="navbar item">
+                <Link to="/busca">
+                  <p className="navbar-text">BUSCAR</p>
+                </Link>
+              </li>
+            </section>
+            <div className="barra-separacao"></div>
             <section id="categoria">
               <li id="categoria-texto-li" className="navbar item">
                 <a href={"/"}>

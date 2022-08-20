@@ -1,0 +1,13 @@
+@import url("../reset/reset.css");
+
+.div-produto-busca {
+  width: 30vw;
+  height: 80vw;
+  padding: 2vw;
+}
+
+.foto-produto-busca {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
