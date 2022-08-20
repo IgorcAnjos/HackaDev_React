@@ -6,6 +6,7 @@ import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 
 import "./Produto.css";
+import FacaLogin from "../../FacaLogin/FacaLogin";
 
 const Produto = ({
   ListaDeProdutos,
@@ -16,6 +17,7 @@ const Produto = ({
   subTotal,
   handleSubTotal,
   setBuscar,
+  login,
 }) => {
   const parametros = useParams();
 
@@ -40,6 +42,8 @@ const Produto = ({
         setBuscar={setBuscar}
       />
       <div className="espacamento"></div>
+      {login.length === 0 ? <FacaLogin /> : ""}
+
       <Header texto={produto.nome} />
       <div className="container-produto">
         <div className="foto-section">

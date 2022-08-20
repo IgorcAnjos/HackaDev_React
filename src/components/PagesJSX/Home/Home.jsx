@@ -2,6 +2,7 @@ import React from "react";
 
 import Banner from "../../Banner/Banner";
 import Catalogo from "../../Catalogo/Catalogo";
+import FacaLogin from "../../FacaLogin/FacaLogin";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 
@@ -16,6 +17,7 @@ const Home = ({
   subTotal,
   handleSubTotal,
   setBuscar,
+  login,
 }) => {
   return (
     <div className="container">
@@ -28,7 +30,10 @@ const Home = ({
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
         setBuscar={setBuscar}
+        login={login}
       />
+      <div className="espacamento"></div>
+      {login.length === 0 ? <FacaLogin /> : ""}
       <Banner />
       <Catalogo ListaDeProdutos={ListaDeProdutos} />
       <Footer />

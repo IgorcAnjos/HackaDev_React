@@ -17,6 +17,7 @@ const Navbar = ({
   handleSubTotal,
   ListaDeProdutos,
   setBuscar,
+  login,
 }) => {
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
@@ -62,6 +63,7 @@ const Navbar = ({
         abrirMenu={abrirMenu}
         setAbrirMenu={setAbrirMenu}
         setBuscar={setBuscar}
+        login={login}
       />
       <Carrinho
         abrirCarrinho={abrirCarrinho}

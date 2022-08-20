@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Header from "../../Header/Header";
 import ProdutoCatalogo from "../../ProdutoCatalogo/ProdutoCatalogo";
@@ -9,7 +9,7 @@ import "./Busca.css";
 const Busca = ({ ListaDeBusca, setBuscar }) => {
   return (
     <div className="container-busca">
-      <Header texto={"Buscar"} />
+      <Header texto={"Busca"} />
       <div className="input-buscar">
         <label className="label-texto" htmlFor="input-busca">
           O que está procurando?
