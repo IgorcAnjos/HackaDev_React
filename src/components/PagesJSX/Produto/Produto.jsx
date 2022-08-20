@@ -40,6 +40,7 @@ const Produto = ({
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
         setBuscar={setBuscar}
+        login={login}
       />
       <div className="espacamento"></div>
       {login.length === 0 ? <FacaLogin /> : ""}
