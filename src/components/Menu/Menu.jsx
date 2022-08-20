@@ -110,14 +110,6 @@ const Menu = ({ abrirMenu, setAbrirMenu, setBuscar, login }) => {
               </div>
             </section>
             <div className="barra-separacao"></div>
-            <section id="novidades">
-              <li className="navbar item">
-                <a href={"/"}>
-                  <p className="navbar-text">NOVIDADES</p>
-                </a>
-              </li>
-            </section>
-            <div className="barra-separacao"></div>
             <section id="promocoes">
               <li className="navbar item">
                 <Link
