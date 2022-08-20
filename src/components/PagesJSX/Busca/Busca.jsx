@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import Header from "../../Header/Header";
-import ProdutoBusca from "../../ProdutoBusca/ProdutoBusca";
 import ProdutoCatalogo from "../../ProdutoCatalogo/ProdutoCatalogo";
 import Footer from "../../Footer/Footer";
 
@@ -10,6 +9,7 @@ import "./Busca.css";
 const Busca = ({ ListaDeProdutos }) => {
   const [ListaDeBusca, SetListaDeBusca] = useState([]);
   const [buscar, setBuscar] = useState("");
+
   useEffect(() => {
     const novaListaProdutos = ListaDeProdutos.filter((produto) =>
       produto.nome.toLowerCase().includes(buscar.toLowerCase())
@@ -17,6 +17,7 @@ const Busca = ({ ListaDeProdutos }) => {
 
     SetListaDeBusca(novaListaProdutos);
   }, [buscar]);
+
   return (
     <div className="container-busca">
       <Header texto={"Buscar"} />
