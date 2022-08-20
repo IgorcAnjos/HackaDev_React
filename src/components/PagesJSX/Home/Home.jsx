@@ -15,6 +15,7 @@ const Home = ({
   handleExcluirListaCarrinnho,
   subTotal,
   handleSubTotal,
+  setBuscar,
 }) => {
   return (
     <div className="container">
@@ -26,6 +27,7 @@ const Home = ({
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
+        setBuscar={setBuscar}
       />
       <Banner />
       <Catalogo ListaDeProdutos={ListaDeProdutos} />

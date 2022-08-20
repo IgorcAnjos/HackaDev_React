@@ -6,18 +6,7 @@ import Footer from "../../Footer/Footer";
 
 import "./Busca.css";
 
-const Busca = ({ ListaDeProdutos }) => {
-  const [ListaDeBusca, SetListaDeBusca] = useState([]);
-  const [buscar, setBuscar] = useState("");
-
-  useEffect(() => {
-    const novaListaProdutos = ListaDeProdutos.filter((produto) =>
-      produto.nome.toLowerCase().includes(buscar.toLowerCase())
-    );
-
-    SetListaDeBusca(novaListaProdutos);
-  }, [buscar]);
-
+const Busca = ({ ListaDeBusca, setBuscar }) => {
   return (
     <div className="container-busca">
       <Header texto={"Buscar"} />
@@ -35,7 +24,6 @@ const Busca = ({ ListaDeProdutos }) => {
           placeholder="Digite Aqui..."
           onChange={(event) => {
             setBuscar(event.target.value);
-            console.log(buscar);
           }}
         />
       </div>

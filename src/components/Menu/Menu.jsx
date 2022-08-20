@@ -5,7 +5,7 @@ import { IoIosClose } from "react-icons/io";
 
 import "./Menu.css";
 
-const Menu = ({ abrirMenu, setAbrirMenu }) => {
+const Menu = ({ abrirMenu, setAbrirMenu, setBuscar }) => {
   if (window.innerWidth >= 900) {
     setAbrirMenu(true);
   }
@@ -62,19 +62,44 @@ const Menu = ({ abrirMenu, setAbrirMenu }) => {
               </li>
               <div id="categorias">
                 <li className="navbar item">
-                  <a href={"/"}>
-                    <p className="navbar-text">Opção1</p>
-                  </a>
+                  <Link
+                    to="/busca"
+                    onClick={() => {
+                      setBuscar("Blazer");
+                    }}
+                  >
+                    <p className="navbar-text">Blazers</p>
+                  </Link>
                 </li>
                 <li className="navbar item">
-                  <a href={"/"}>
-                    <p className="navbar-text">Opção2</p>
-                  </a>
+                  <Link
+                    to="/busca"
+                    onClick={() => {
+                      setBuscar("modern fit");
+                    }}
+                  >
+                    <p className="navbar-text">Modern Fit</p>
+                  </Link>
                 </li>
                 <li className="navbar item">
-                  <a href={"/"}>
-                    <p className="navbar-text">Opção3</p>
-                  </a>
+                  <Link
+                    to="/busca"
+                    onClick={() => {
+                      setBuscar("smoking");
+                    }}
+                  >
+                    <p className="navbar-text">Smoking´s</p>
+                  </Link>
+                </li>
+                <li className="navbar item">
+                  <Link
+                    to="/busca"
+                    onClick={() => {
+                      setBuscar("terno conjunto");
+                    }}
+                  >
+                    <p className="navbar-text">Ternos Conjunto</p>
+                  </Link>
                 </li>
               </div>
             </section>
