@@ -124,7 +124,10 @@ const RouterPages = () => {
           element={<Checkout listaCarrinho={listaCarrinho} />}
         />
         <Route path="/novidades" element={<Novidades />} />
-        <Route path="/busca" element={<Busca />} />
+        <Route
+          path="/busca"
+          element={<Busca ListaDeProdutos={ListaDeProdutos} />}
+        />
         <Route path="/duvidas" element={<Duvidas />} />
         <Route
           path="/produto/:id"
