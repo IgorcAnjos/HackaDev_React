@@ -5,7 +5,6 @@ import Home from "../PagesJSX/Home/Home";
 import Cadastro from "../PagesJSX/Cadastro/Cadastro";
 import Produto from "../PagesJSX/Produto/Produto";
 import Checkout from "../PagesJSX/Checkout/Checkout";
-import Novidades from "../PagesJSX/Novidades/Novidades";
 import Busca from "../PagesJSX/Busca/Busca";
 import Login from "../PagesJSX/Login/Login";
 import Duvidas from "../PagesJSX/DuvidasESac/Duvidas";
@@ -160,7 +159,6 @@ const RouterPages = () => {
           path="/checkout"
           element={<Checkout listaCarrinho={listaCarrinho} />}
         />
-        <Route path="/novidades" element={<Novidades />} />
         <Route
           path="/busca"
           element={<Busca ListaDeBusca={ListaDeBusca} setBuscar={setBuscar} />}
