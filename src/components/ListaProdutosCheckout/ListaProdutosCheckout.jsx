@@ -15,7 +15,7 @@ function ListaProdutosCheckout({
       <div className="nome-tamanho-quantidade">
         <p className="nome">{nome}</p>
         <div className="tamanho-quantidade">
-          <p className="tam">Tam:{tamanho}</p>
+          <p className="tamanho">Tam:{tamanho}</p>
           <p className="quant">quant:{quantidade}</p>
         </div>
       </div>
