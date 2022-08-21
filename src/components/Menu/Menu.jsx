@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { IoIosClose } from "react-icons/io";
@@ -6,9 +6,22 @@ import { IoIosClose } from "react-icons/io";
 import "./Menu.css";
 
 const Menu = ({ abrirMenu, setAbrirMenu, setBuscar, login }) => {
-  if (window.innerWidth >= 900) {
-    setAbrirMenu(true);
-  }
+  const [largura, setLargura] = useState(window.innerWidth);
+
+  const fetchLarguraAtual = () => {
+    const novaLargura = window.innerWidth;
+    setLargura(novaLargura);
+  };
+
+  window.addEventListener("resize", fetchLarguraAtual);
+
+  useEffect(() => {
+    if (largura >= 900) {
+      setAbrirMenu(true);
+    } else {
+      setAbrirMenu(false);
+    }
+  }, [largura, setAbrirMenu]);
 
   return abrirMenu ? (
     <section className="sombra">
