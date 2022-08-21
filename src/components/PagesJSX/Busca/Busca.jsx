@@ -28,17 +28,23 @@ const Busca = ({ ListaDeBusca, setBuscar }) => {
         />
       </div>
       <section className="flex-section">
-        {ListaDeBusca.map((item) => (
-          <ProdutoCatalogo
-            key={item.id}
-            id={item.id}
-            imagem={item.imagem}
-            nome={item.nome}
-            preco={item.preco}
-            colunas="coluna1"
-            desconto={item.desconto}
-          />
-        ))}
+        {ListaDeBusca.map((item) =>
+          item.quantidade_p === 0 &&
+          item.quantidade_m === 0 &&
+          item.quantidade_g === 0 ? (
+            ""
+          ) : (
+            <ProdutoCatalogo
+              key={item.id}
+              id={item.id}
+              imagem={item.imagem}
+              nome={item.nome}
+              preco={item.preco}
+              colunas="coluna1"
+              desconto={item.desconto}
+            />
+          )
+        )}
       </section>
       <div className="espacinho"></div>
       <Footer />
