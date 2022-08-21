@@ -16,6 +16,7 @@ const Carrinho = ({
   subTotal,
   handleSubTotal,
   ListaDeProdutos,
+  totalNoCarrinho,
 }) => {
   return abrirCarrinho ? (
     <div className="sombra-carrinho">
@@ -34,7 +35,7 @@ const Carrinho = ({
                 setAbrirCarrinho(!abrirCarrinho);
               }}
             />
-            <p id="sacola">Sacola ({listaCarrinho.length})</p>
+            <p id="sacola">Sacola ({totalNoCarrinho})</p>
           </div>
         </section>
         <section className="secao-carrinho">

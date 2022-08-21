@@ -19,6 +19,8 @@ const Navbar = ({
   setBuscar,
   login,
 }) => {
+  let totalNoCarrinho = 0;
+  listaCarrinho.map((produto) => (totalNoCarrinho += produto.quantidade));
   const [abrirMenu, setAbrirMenu] = useState(false);
   const [abrirCarrinho, setAbrirCarrinho] = useState(false);
   return (
@@ -54,7 +56,7 @@ const Navbar = ({
               className="item-na-sacola"
               style={listaCarrinho.length === 0 ? { display: "none" } : {}}
             >
-              <p id="quantidade">{listaCarrinho.length}</p>
+              <p id="quantidade">{totalNoCarrinho}</p>
             </div>
           </li>
         </ul>
@@ -75,6 +77,7 @@ const Navbar = ({
         subTotal={subTotal}
         handleSubTotal={handleSubTotal}
         ListaDeProdutos={ListaDeProdutos}
+        totalNoCarrinho={totalNoCarrinho}
       />
     </>
   );
