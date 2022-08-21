@@ -15,7 +15,9 @@ const RouterPages = () => {
   const ListaDeProdutos = getProdutos();
 
   // Funções pertinentes a lista de carrinho, adicionar subtrair e verificar todas estas ações
-  const [listaCarrinho, setListaCarrinho] = useState([]);
+  const [listaCarrinho, setListaCarrinho] = useState(
+    localStorage.listaCarrinho ? JSON.parse(localStorage.listaCarrinho) : []
+  );
 
   const handleAdicaoListaCarrinnho = (id, tamanho) => {
     const idClick = `${id}${tamanho}`;
@@ -100,6 +102,7 @@ const RouterPages = () => {
 
   useEffect(() => {
     handleSubTotal(listaCarrinho);
+    localStorage.listaCarrinho = JSON.stringify(listaCarrinho);
   }, [listaCarrinho]);
 
   // Definindo  funções pertinentes da página de pesquisa
@@ -121,12 +124,18 @@ const RouterPages = () => {
   }, [buscar, ListaDeProdutos]);
 
   // Funções pertinentes ao login
-  const [login, setLogin] = useState([]);
+  const [login, setLogin] = useState(
+    localStorage.login ? JSON.parse(localStorage.login) : []
+  );
 
   const handleLoginAction = (cadastro) => {
-    setLogin([...login, "login Efeturado"]);
+    setLogin([...login, { login: true }]);
     console.log(login);
   };
+
+  useEffect(() => {
+    localStorage.login = JSON.stringify(login);
+  }, [login]);
 
   return (
     <Router>
