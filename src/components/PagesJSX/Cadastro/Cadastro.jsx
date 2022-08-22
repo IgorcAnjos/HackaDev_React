@@ -48,7 +48,6 @@ const Cadastro = ({ handleLoginAction }) => {
             type="tel"
             nome="endereco-cep"
             id="endereco-cep"
-            pattern="[0-7]{8}"
             maxlength="8"
           />
           <InputCheckout
