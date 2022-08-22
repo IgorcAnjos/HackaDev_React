@@ -23,6 +23,7 @@
 
   .carrousel .imagens-carrousel .itens-carrousel {
     width: 33.3%;
+    object-fit: cover;
   }
 
   @keyframes animacao {
@@ -74,6 +75,7 @@
   .carrousel .imagens-carrousel .itens-carrousel {
     width: 33.3%;
     height: 100%;
+    object-fit: cover;
   }
 
   @keyframes animacao {
