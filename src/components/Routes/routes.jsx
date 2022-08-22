@@ -128,7 +128,7 @@ const RouterPages = () => {
     localStorage.login ? JSON.parse(localStorage.login) : []
   );
 
-  const handleLoginAction = (cadastro) => {
+  const handleLoginAction = () => {
     setLogin([...login, { login: true }]);
     console.log(login);
   };
