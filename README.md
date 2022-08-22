@@ -161,6 +161,6 @@ Rode este comando para finalizar a execução do servidor e liberar a sua porta.
 
 <h2>Este projeto Está sendo hospedado pela Netlify</h2>
 
-<h3>Site para acesso: <a href="https://kingsman-react.netlify.app/g">Aqui</a></h3>
+<h3>Site para acesso: <a href="https://kingsman-react.netlify.app/">Aqui</a></h3>
 
 </div>
