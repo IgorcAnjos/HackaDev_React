@@ -57,59 +57,59 @@ Algumas Libs de extrema importância para o funcionamento do site como:
 
 ### Requisitos Obrigatórios:
 
--[x] Aplicação deve ser mobile First.
+- [x] Aplicação deve ser mobile First.
 
--[x] A aplicação deve ter uma boa usabilidade em desktop.
+- [x] A aplicação deve ter uma boa usabilidade em desktop.
 
--[x] Aplicação deve utilizar bem o CSS.
+- [x] Aplicação deve utilizar bem o CSS.
 
--[x] Deve ser feito o Deploy utilizando o Netlify.
+- [x] Deve ser feito o Deploy utilizando o Netlify.
 
--[x] Não deve utilizar Frameworks ou libs de Estilização.
+- [x] Não deve utilizar Frameworks ou libs de Estilização.
 
--[x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preco promocional(se disponível).
+- [x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preco promocional(se disponível).
 
--[x] Deve ser possível adicionar itens no carrinho por tamanho.
+- [x] Deve ser possível adicionar itens no carrinho por tamanho.
 
--[x] Deve ser possível visualizar os intens no carrinho com as informações: imagem, nome, preço, quantidade.
+- [x] Deve ser possível visualizar os intens no carrinho com as informações: imagem, nome, preço, quantidade.
 
--[x] Deve ser possível remover itens do carrinho de compras.
+- [x] Deve ser possível remover itens do carrinho de compras.
 
 ### Requisitos Opicionais:
 
--[x] O carrinho de compras deve persistir entre os reloads de páginas.
+- [x] O carrinho de compras deve persistir entre os reloads de páginas.
 
--[x] Deve Mostrar somente os tamanhos disponíveis na hora de adicionar no carrinho.
+- [x] Deve Mostrar somente os tamanhos disponíveis na hora de adicionar no carrinho.
 
--[x] Feature de busca em tempo real.
+- [x] Feature de busca em tempo real.
 
 ### Funcionalidades Aplicadas por conta própria:
 
--[x] Mostrar no catálogo somente produtos que estejam disponíveis.
+- [x] Mostrar no catálogo somente produtos que estejam disponíveis.
 
--[x] Pode-se adicionar e subtrair itens que já estão no carrinhos de compra.
+- [x] Pode-se adicionar e subtrair itens que já estão no carrinhos de compra.
 
--[x] opção de visualizar os produtos em pequena ou grande escala.
+- [x] opção de visualizar os produtos em pequena ou grande escala.
 
--[x] verificação para acessar o checkout somente com produtos no carrinho.
+- [x] verificação para acessar o checkout somente com produtos no carrinho.
 
--[x] Produtos em promoção com visualização personalizada.
+- [x] Produtos em promoção com visualização personalizada.
 
--[x] Verificação de quantidade disponível de itens para adicionar itens no carrinho
+- [x] Verificação de quantidade disponível de itens para adicionar itens no carrinho
 
--[x] Suporte responsivo para tablets
+- [x] Suporte responsivo para tablets
 
--[x] Busca disponível para preços itens em promoção.
+- [x] Busca disponível para preços itens em promoção.
 
--[x] Busca Disponível por categoria de produtos
+- [x] Busca Disponível por categoria de produtos
 
--[x] UX pensada e estilizada, paleta de cores.
+- [x] UX pensada e estilizada, paleta de cores.
 
--[x] Verificação de login efetuado
+- [x] Verificação de login efetuado
 
--[x] Alguns dados guardados em cache.
+- [x] Alguns dados guardados em cache.
 
--[x] Ir para página do produto ao clicar na foto dele no carrinho.
+- [x] Ir para página do produto ao clicar na foto dele no carrinho.
 
 </div>
 
