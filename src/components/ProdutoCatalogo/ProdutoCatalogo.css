@@ -21,7 +21,7 @@
     margin-right: 2vh;
     margin-bottom: 3vh;
     width: 40vw;
-    height: 40vh;
+    height: 75vw;
     background-color: #dcdfe5;
     border-radius: 1vh;
     padding-bottom: 1vh;
@@ -52,7 +52,7 @@
     width: 100%;
   }
 
-  .preco,
+  .preco-catalogo,
   .desconto {
     font-size: 3vw;
   }
@@ -113,7 +113,7 @@
     width: 100%;
   }
 
-  .preco,
+  .preco-catalogo,
   .desconto {
     font-size: 2.5vw;
   }

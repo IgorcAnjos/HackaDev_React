@@ -28,17 +28,17 @@ const ProdutoCatalogo = ({ id, imagem, nome, preco, colunas, desconto }) => {
         </h2>
         <div className="preco-desconto">
           <p
-            className="preco"
+            className="preco-catalogo"
             style={
               desconto === 0
                 ? {}
                 : { textDecoration: "line-through", color: "crimson" }
             }
-          >{`R$ ${preco}`}</p>
+          >{`R$ ${preco.toFixed(2)}`}</p>
           <p
             className="desconto"
             style={desconto === 0 ? { display: "none" } : {}}
-          >{`R$ ${preco - preco * (desconto / 100)}`}</p>
+          >{`R$ ${(preco - preco * (desconto / 100)).toFixed(2)}`}</p>
         </div>
       </div>
     </Link>
