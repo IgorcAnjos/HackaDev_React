@@ -9,7 +9,7 @@ const Header = ({ texto }) => {
     <div className="header">
       <header className="sair-descricao">
         <a href="javascript:history.back()">
-          <IoIosArrowBack />
+          <IoIosArrowBack className="icone-sair" />
         </a>
 
         <p className="texto-descricao">{texto}</p>
