@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <a
         className="git-logo"
-        href="https://github.com/alveskt/-HackaDev"
+        href="https://github.com/alveskt/HackaDev_React"
         target="_blank"
         rel="noreferrer"
       >
