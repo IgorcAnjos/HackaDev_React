@@ -27,6 +27,14 @@ const Footer = () => {
           className="links"
           target="_blank"
           rel="noreferrer"
+          href="https://github.com/alveskt/"
+        >
+          <p className="nomes">Gustavo Alves</p>
+        </a>
+        <a
+          className="links"
+          target="_blank"
+          rel="noreferrer"
           href="https://github.com/IgorcAnjos"
         >
           <p className="nomes">Igor Anjos</p>
@@ -38,14 +46,6 @@ const Footer = () => {
           href="https://github.com/AgstAngelo"
         >
           <p className="nomes">Augusto Angelo</p>
-        </a>
-        <a
-          className="links"
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/alveskt/"
-        >
-          <p className="nomes">Gustavo Alves</p>
         </a>
         <a
           className="links"

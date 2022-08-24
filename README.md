@@ -16,7 +16,8 @@
 <Header id="Apresentacao" >
     <h1>KingsMan</h1>
     <h2>HackaDev: #GODev - Imã Learning Place</h2>
-    <h3> KingsMan é um projeto criado como forma de avaliação de Softskill's e Hardskill's, como nossa capacidade de cirar uma boa aplicação, e um bom trabalho em equipe etc. </h3>
+    <h3>KingsMan é o resultado do projeto #HackaDev da escola de programação Imã Learning Place que teve como objetivo avaliar as habilidades técnicas dos integrantes e também a capacidade de trabalho em equipe, organização e pontualidade. Simulando um ambiente de trabalho de uma empresa.</h3>
+   
 
 Membros:
 
@@ -34,7 +35,7 @@ Monitor: [Gustavo Alves](https://github.com/alveskt/)
 
 <div id="tecnologias" align="center">
 
-<h2>Este Projeto foi feito com React não utiliza libs ou Frameworks para sua estilização </h2>
+<h2>Este Projeto foi feito com ReactJs e não utilizou nenhum FrameWork em suas estilizações.</h2>
 
  <div align="center">
     <img align="center"  height="60"  src="https://cdn-icons-png.flaticon.com/512/919/919851.png">
@@ -43,7 +44,7 @@ Monitor: [Gustavo Alves](https://github.com/alveskt/)
     <img align="center"  height="60"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   </div>
 
-Algumas Libs de extrema importância para o funcionamento do site como:
+Algumas Libs de extrema importância para o funcionamento do site:
 
 [React Icons](https://www.npmjs.com/package/react-icons)
 
@@ -67,7 +68,7 @@ Algumas Libs de extrema importância para o funcionamento do site como:
 
 - [x] Não deve utilizar Frameworks ou libs de Estilização.
 
-- [x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preco promocional(se disponível).
+- [x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preco promocional (se disponível).
 
 - [x] Deve ser possível adicionar itens no carrinho por tamanho.
 
@@ -89,25 +90,25 @@ Algumas Libs de extrema importância para o funcionamento do site como:
 
 - [x] Pode-se adicionar e subtrair itens que já estão no carrinhos de compra.
 
-- [x] opção de visualizar os produtos em pequena ou grande escala.
+- [x] Opção de visualizar os produtos em pequena ou grande escala.
 
-- [x] verificação para acessar o checkout somente com produtos no carrinho.
+- [x] Verificação para acessar o checkout somente com produtos no carrinho.
 
 - [x] Produtos em promoção com visualização personalizada.
 
-- [x] Verificação de quantidade disponível de itens para adicionar itens no carrinho
+- [x] Verificação de quantidade disponível de itens para adicionar itens no carrinho.
 
-- [x] Suporte responsivo para tablets
+- [x] Suporte responsivo para tablets.
 
 - [x] Busca disponível para preços itens em promoção.
 
-- [x] Busca Disponível por categoria de produtos
+- [x] Busca Disponível por categoria de produtos.
 
-- [x] UX pensada e estilizada, paleta de cores.
+- [x] Todas as decisões relacionadas à arquitetura visual do site levaram em conta a Experiência do Usuário (UX)
 
-- [x] Verificação de login efetuado
+- [x] Verificação de login efetuado.
 
-- [x] Alguns dados guardados em cache.
+- [x] Dados guardados em cache.
 
 - [x] Ir para página do produto ao clicar na foto dele no carrinho.
 
@@ -159,8 +160,5 @@ Rode este comando para finalizar a execução do servidor e liberar a sua porta.
 
 <div id="deploy-sites">
 
-<h2>Este projeto Está sendo hospedado pela Netlify</h2>
-
-<h3>Site para acesso: <a href="https://kingsman-react.netlify.app/">Aqui</a></h3>
-
+<h2>Este projeto Está sendo hospedado no Netlify e pode ser acessado através do Link: <a href="https://kingsman-react.netlify.app/">Kingsman</a></h2>
 </div>
