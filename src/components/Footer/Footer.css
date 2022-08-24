@@ -26,6 +26,10 @@
     cursor: pointer;
     text-decoration: none;
   }
+  
+  .desenvolvedores .links:hover{
+    text-decoration: underline;
+  }
 
   .copyright {
     display: flex;
@@ -93,6 +97,9 @@
     color: #002855;
     cursor: pointer;
     text-decoration: none;
+  }
+  .desenvolvedores .links:hover{
+    text-decoration: underline;
   }
   .copyright {
     display: flex;
