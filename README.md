@@ -16,18 +16,18 @@
 <Header id="Apresentacao" >
     <h1>KingsMan</h1>
     <h2>HackaDev: #GODev - Imã Learning Place</h2>
-    <h3>KingsMan é o resultado do projeto #HackaDev da escola de programação Imã Learning Place que teve como objetivo avaliar as habilidades técnicas dos integrantes e também a capacidade de trabalho em equipe, organização e pontualidade. Simulando um ambiente de trabalho de uma empresa.</h3>
+    <h3>  KingsMan é o resultado do projeto #HackaDev da escola de programação Imã Learning Place. Este projeto teve como objetivo avaliar as habilidades técnicas dos integrantes e também a capacidade de trabalho em equipe, organização, compromisso e pontualidade. Sendo assim, nos atentamos a todas as etapas de todo o processo de desenvolvimento, desde reconhecimento do perfil do cliente, experiência do usuário e adicionar funcionalidades não solicitadas com o intuito de obter o melhor resultado possível.</h3>
    
 
 Membros:
 
-Monitor: [Gustavo Alves](https://github.com/alveskt/)
+[Gustavo Alves](https://github.com/alveskt/) - Monitor
 
 [Igor Anjos](https://github.com/IgorcAnjos)
 
-[Gustavo Henrique](https://github.com/Gustavohc18)
-
 [Augusto Angelo](https://github.com/AgstAngelo)
+
+[Gustavo Henrique](https://github.com/Gustavohc18)
 
 [Simon Assagra](https://github.com/SABAT-dev)
 
@@ -35,7 +35,7 @@ Monitor: [Gustavo Alves](https://github.com/alveskt/)
 
 <div id="tecnologias" align="center">
 
-<h2>Este Projeto foi feito com ReactJs e não utilizou nenhum FrameWork em suas estilizações.</h2>
+<h2>Este Projeto foi feito com React e não utilizou nenhum FrameWork em suas estilizações.</h2>
 
  <div align="center">
     <img align="center"  height="60"  src="https://cdn-icons-png.flaticon.com/512/919/919851.png">
@@ -58,21 +58,21 @@ Algumas Libs de extrema importância para o funcionamento do site:
 
 ### Requisitos Obrigatórios:
 
-- [x] Aplicação deve ser mobile First.
+- [x] A aplicação deve ser mobile First.
 
 - [x] A aplicação deve ter uma boa usabilidade em desktop.
 
-- [x] Aplicação deve utilizar bem o CSS.
+- [x] A aplicação deve utilizar bem o CSS.
 
 - [x] Deve ser feito o Deploy utilizando o Netlify.
 
 - [x] Não deve utilizar Frameworks ou libs de Estilização.
 
-- [x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preco promocional (se disponível).
+- [x] Deve apresentar para cada produto estas informações: imagem, nome, preço, descrição, status promocional, tamanhos disponíveis, selo promocional, preço promocional (se disponível).
 
 - [x] Deve ser possível adicionar itens no carrinho por tamanho.
 
-- [x] Deve ser possível visualizar os intens no carrinho com as informações: imagem, nome, preço, quantidade.
+- [x] Deve ser possível visualizar os itens no carrinho com as informações: imagem, nome, preço, quantidade.
 
 - [x] Deve ser possível remover itens do carrinho de compras.
 
@@ -80,7 +80,7 @@ Algumas Libs de extrema importância para o funcionamento do site:
 
 - [x] O carrinho de compras deve persistir entre os reloads de páginas.
 
-- [x] Deve Mostrar somente os tamanhos disponíveis na hora de adicionar no carrinho.
+- [x] Deve mostrar somente os tamanhos disponíveis na hora de adicionar no carrinho.
 
 - [x] Feature de busca em tempo real.
 
@@ -88,7 +88,7 @@ Algumas Libs de extrema importância para o funcionamento do site:
 
 - [x] Mostrar no catálogo somente produtos que estejam disponíveis.
 
-- [x] Pode-se adicionar e subtrair itens que já estão no carrinhos de compra.
+- [x] Pode-se adicionar e subtrair itens que já estão no carrinhos de compras.
 
 - [x] Opção de visualizar os produtos em pequena ou grande escala.
 
@@ -100,7 +100,7 @@ Algumas Libs de extrema importância para o funcionamento do site:
 
 - [x] Suporte responsivo para tablets.
 
-- [x] Busca disponível para preços itens em promoção.
+- [x] Busca disponível para preços de itens em promoção.
 
 - [x] Busca Disponível por categoria de produtos.
 
@@ -116,7 +116,7 @@ Algumas Libs de extrema importância para o funcionamento do site:
 
 <div id="visao-geral">
 
-<h2> -Visão Geral-</h2>
+<h2 align="center"> -Visão Geral-</h2>
 
 <div align="center">
     <img align="center" width="45%" src="https://media.discordapp.net/attachments/1011043824207929385/1011044789912870993/unknown.png?width=360&height=634">
@@ -159,6 +159,5 @@ Rode este comando para finalizar a execução do servidor e liberar a sua porta.
 </div>
 
 <div id="deploy-sites">
-
-<h2>Este projeto Está sendo hospedado no Netlify e pode ser acessado através do Link: <a href="https://kingsman-react.netlify.app/">Kingsman</a></h2>
+  <h2>Este projeto está hospedado no Netlify e pode ser acessado através do link: <a href="https://kingsman-react.netlify.app/">Kingsman</a></h2>
 </div>

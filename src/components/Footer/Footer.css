@@ -24,6 +24,7 @@
   .desenvolvedores .links {
     color: #002855;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .copyright {
@@ -91,6 +92,7 @@
   .desenvolvedores .links {
     color: #002855;
     cursor: pointer;
+    text-decoration: none;
   }
   .copyright {
     display: flex;
